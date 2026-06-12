@@ -4,69 +4,27 @@ type LogoProps = {
   size?: "sm" | "md" | "lg";
 };
 
-const ratio = 1.4;
-
-const sizes = {
-  sm: { h: Math.round(40 * ratio), fs: Math.round(22 * ratio), gap: 6, dot: 8 },
-  md: { h: Math.round(60 * ratio), fs: Math.round(34 * ratio), gap: 8, dot: 12 },
-  lg: { h: Math.round(76 * ratio), fs: Math.round(44 * ratio), gap: 10, dot: 16 },
+const textSizes = {
+  sm: { amini: "text-lg", africa: "text-base", bar: "w-5 h-px" },
+  md: { amini: "text-2xl", africa: "text-xl", bar: "w-8 h-0.5" },
+  lg: { amini: "text-3xl", africa: "text-2xl", bar: "w-10 h-0.5" },
 };
 
 export function Logo({ className = "", variant = "dark", size = "md" }: LogoProps) {
-  const s = sizes[size];
-  const primary = variant === "dark" ? "#0A1628" : "#FFFFFF";
-  const gold = "#C5A572";
-  const baseline = s.h / 2 + s.fs * 0.36;
-  const ch = Math.round(s.fs * 0.62);
-  const aminiChars = 5;
-  const africaChars = 6;
-  const aminiW = Math.round(ch * aminiChars);
-  const africaW = Math.round(ch * africaChars);
-  const dotX = aminiW + s.gap;
-  const africaX = dotX + s.dot + s.gap;
-  const totalW = africaX + africaW;
+  const s = textSizes[size];
+  const aminiColor = variant === "dark" ? "text-[#0A1628]" : "text-white";
+  const goldColor = "text-[#C5A572]";
+  const barColor = variant === "dark" ? "bg-[#C5A572]" : "bg-[#C5A572]";
 
   return (
-    <svg
-      width={totalW}
-      height={s.h}
-      viewBox={`0 0 ${totalW} ${s.h}`}
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      style={{ minWidth: totalW }}
-    >
-      <text
-        x="0"
-        y={baseline}
-        fontFamily="'Playfair Display', Georgia, 'Times New Roman', serif"
-        fontSize={s.fs}
-        fontWeight="700"
-        fill={primary}
-        style={{ letterSpacing: "-0.03em" }}
-      >
-        Amini
-      </text>
-      <rect
-        x={dotX}
-        y={s.h / 2 - s.dot / 2}
-        width={s.dot}
-        height={s.dot}
-        rx={s.dot * 0.22}
-        fill={gold}
-        transform={`rotate(45, ${dotX + s.dot / 2}, ${s.h / 2})`}
-      />
-      <text
-        x={africaX}
-        y={baseline}
-        fontFamily="'Playfair Display', Georgia, 'Times New Roman', serif"
-        fontSize={s.fs}
-        fontWeight="400"
-        fill={gold}
-        style={{ letterSpacing: "-0.01em" }}
-      >
-        Africa
-      </text>
-    </svg>
+    <div className={`inline-flex flex-col items-start leading-none ${className}`}>
+      <span className={`${s.amini} ${aminiColor} font-heading font-bold tracking-tight`}>
+        AMINI
+      </span>
+      <div className={`${s.bar} ${barColor} rounded-full my-0.5`} />
+      <span className={`${s.africa} ${goldColor} font-heading font-light tracking-wider`}>
+        AFRICA
+      </span>
+    </div>
   );
 }
