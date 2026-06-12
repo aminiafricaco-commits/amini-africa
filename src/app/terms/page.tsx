@@ -10,7 +10,7 @@ export default function TermsPage() {
   return (
     <div className="pt-32 pb-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
           Terms of Service
         </h1>
         <p className="text-sm text-muted-foreground mb-10">
@@ -18,7 +18,7 @@ export default function TermsPage() {
         </p>
 
         <div className="prose prose-stone max-w-none space-y-6 text-muted-foreground">
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             1. Acceptance of Terms
           </h2>
           <p>
@@ -27,7 +27,7 @@ export default function TermsPage() {
             please do not use our services.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             2. Services Description
           </h2>
           <p>
@@ -37,7 +37,7 @@ export default function TermsPage() {
             our website.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             3. User Obligations
           </h2>
           <p>You agree to:</p>
@@ -48,7 +48,7 @@ export default function TermsPage() {
             <li>Respect confidentiality agreements</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             4. Intellectual Property
           </h2>
           <p>
@@ -57,7 +57,7 @@ export default function TermsPage() {
             applicable intellectual property laws.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             5. Limitation of Liability
           </h2>
           <p>
@@ -67,7 +67,7 @@ export default function TermsPage() {
             the specific service giving rise to the claim.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             6. Service Modifications
           </h2>
           <p>
@@ -76,7 +76,7 @@ export default function TermsPage() {
             changes.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             7. Governing Law
           </h2>
           <p>
@@ -85,7 +85,7 @@ export default function TermsPage() {
             arbitration.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             8. Changes to Terms
           </h2>
           <p>
@@ -93,7 +93,7 @@ export default function TermsPage() {
             services after changes constitutes acceptance of the new terms.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             9. Contact
           </h2>
           <p>

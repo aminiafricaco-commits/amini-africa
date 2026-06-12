@@ -44,7 +44,7 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-sm sm:text-base text-foreground/80 leading-relaxed mb-8"
+          className="text-sm sm:text-base text-foreground/90 leading-relaxed mb-8"
         >
           Trusted local representation, property verification, procurement, and
           business support for diaspora Africans across Sub-Saharan Africa.

@@ -53,7 +53,7 @@ export default function ProcurementPage() {
               Procurement & Supply Chain Support
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mb-8">
+            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl mb-8">
               Reliable supply chains start with trusted vendors. We source,
               verify, and monitor suppliers across Africa so you can operate
               with confidence.
@@ -72,20 +72,20 @@ export default function ProcurementPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="font-heading text-2xl font-bold text-secondary mb-6">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
                 Services We Offer
               </h2>
               <div className="space-y-3">
                 {services.map((s) => (
                   <div key={s} className="flex items-start gap-3 bg-muted rounded-xl px-5 py-3.5 border border-border">
                     <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-secondary/80 text-sm">{s}</span>
+                    <span className="text-foreground/90 text-sm">{s}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
-              <h2 className="font-heading text-2xl font-bold text-secondary mb-6">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
                 Client Benefits
               </h2>
               <div className="bg-gradient-to-br from-white/80 to-white/30 rounded-2xl p-8 border border-primary/10">
@@ -96,7 +96,7 @@ export default function ProcurementPage() {
                         <b.icon className="h-5 w-5 text-primary" />
                       </div>
                       <div className="flex items-center min-h-[40px]">
-                        <span className="text-secondary/80">{b.text}</span>
+                        <span className="text-foreground/90">{b.text}</span>
                       </div>
                     </div>
                   ))}
@@ -110,7 +110,7 @@ export default function ProcurementPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-2xl font-bold text-secondary mb-3">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-3">
               How It Works
             </h2>
             <div className="w-12 h-0.5 bg-primary mx-auto mb-3 rounded-full" />
@@ -135,7 +135,7 @@ export default function ProcurementPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Need Reliable Suppliers in Africa?
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             Let us verify your vendors and strengthen your supply chain with
             trusted local partners.
           </p>

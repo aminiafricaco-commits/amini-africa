@@ -78,7 +78,7 @@ export default function IndustriesPage() {
               Industries We Serve
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl">
               We support a diverse range of clients across multiple sectors, all
               united by one common need: trusted representation on the ground in
               Sub-Saharan Africa.
@@ -99,7 +99,7 @@ export default function IndustriesPage() {
                 <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mb-5 group-hover:from-primary/20 group-hover:scale-105 transition-all duration-500">
                   <ind.icon className="h-7 w-7 text-primary" />
                 </div>
-                <h2 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-500">
+                <h2 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-500">
                   {ind.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
@@ -120,7 +120,7 @@ export default function IndustriesPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Not Sure Where You Fit?
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             Contact us and we will help identify the right support for your needs.
           </p>
           <Link

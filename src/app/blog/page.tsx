@@ -16,7 +16,7 @@ export default function BlogPage() {
     <div className="pt-32 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Insights & Resources
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -28,7 +28,7 @@ export default function BlogPage() {
 
         {posts.length === 0 ? (
           <div className="text-center py-20">
-            <h2 className="text-2xl font-semibold text-secondary mb-4">
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
               Coming Soon
             </h2>
             <p className="text-muted-foreground max-w-md mx-auto">
@@ -51,7 +51,7 @@ export default function BlogPage() {
                     {post.category}
                   </span>
                 </div>
-                <h2 className="text-xl font-semibold text-secondary mb-3 group-hover:text-primary transition-colors">
+                <h2 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">

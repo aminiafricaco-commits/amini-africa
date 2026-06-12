@@ -52,7 +52,7 @@ export function FeaturedCaseStudies() {
               Results
             </span>
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Proven Results
           </h2>
           <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
@@ -84,7 +84,7 @@ export function FeaturedCaseStudies() {
                   <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mb-5 group-hover:from-primary/20 group-hover:scale-110 transition-all duration-500">
                     <study.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-heading text-lg font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-500">
+                  <h3 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-500">
                     {study.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4">

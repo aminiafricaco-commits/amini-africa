@@ -46,7 +46,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-secondary">
+            <span className="text-2xl font-bold text-foreground">
               AMINI
             </span>
             <span className="text-2xl font-light text-primary">
@@ -60,7 +60,7 @@ export function Navbar() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="flex items-center gap-1 text-sm font-medium text-secondary/80 hover:text-secondary transition-colors">
+              <button className="flex items-center gap-1 text-sm font-medium text-foreground/90 hover:text-foreground transition-colors">
                 Services <ChevronDown className="h-3 w-3" />
               </button>
               {servicesOpen && (
@@ -69,7 +69,7 @@ export function Navbar() {
                     <Link
                       key={s.href}
                       href={s.href}
-                      className="block px-4 py-2 text-sm text-secondary/80 hover:text-secondary hover:bg-accent/20 transition-colors"
+                      className="block px-4 py-2 text-sm text-foreground/90 hover:text-foreground hover:bg-accent/20 transition-colors"
                     >
                       {s.label}
                     </Link>
@@ -83,7 +83,7 @@ export function Navbar() {
               onMouseEnter={() => setCompanyOpen(true)}
               onMouseLeave={() => setCompanyOpen(false)}
             >
-              <button className="flex items-center gap-1 text-sm font-medium text-secondary/80 hover:text-secondary transition-colors">
+              <button className="flex items-center gap-1 text-sm font-medium text-foreground/90 hover:text-foreground transition-colors">
                 Company <ChevronDown className="h-3 w-3" />
               </button>
               {companyOpen && (
@@ -92,7 +92,7 @@ export function Navbar() {
                     <Link
                       key={c.href}
                       href={c.href}
-                      className="block px-4 py-2 text-sm text-secondary/80 hover:text-secondary hover:bg-accent/20 transition-colors"
+                      className="block px-4 py-2 text-sm text-foreground/90 hover:text-foreground hover:bg-accent/20 transition-colors"
                     >
                       {c.label}
                     </Link>
@@ -103,19 +103,19 @@ export function Navbar() {
 
             <Link
               href="/blog"
-              className="text-sm font-medium text-secondary/80 hover:text-secondary transition-colors"
+              className="text-sm font-medium text-foreground/90 hover:text-foreground transition-colors"
             >
               Insights
             </Link>
             <Link
               href="/faqs"
-              className="text-sm font-medium text-secondary/80 hover:text-secondary transition-colors"
+              className="text-sm font-medium text-foreground/90 hover:text-foreground transition-colors"
             >
               FAQs
             </Link>
             <Link
               href="/contact"
-              className="text-sm font-medium text-secondary/80 hover:text-secondary transition-colors"
+              className="text-sm font-medium text-foreground/90 hover:text-foreground transition-colors"
             >
               Contact
             </Link>
@@ -125,7 +125,7 @@ export function Navbar() {
           </nav>
 
           <button
-            className="lg:hidden text-secondary"
+            className="lg:hidden text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -139,7 +139,7 @@ export function Navbar() {
             <div>
               <button
                 onClick={() => setServicesOpen(!servicesOpen)}
-                className="flex items-center justify-between w-full py-2 text-sm font-medium text-secondary"
+                className="flex items-center justify-between w-full py-2 text-sm font-medium text-foreground"
               >
                 Services <ChevronDown className={cn("h-4 w-4 transition-transform", servicesOpen && "rotate-180")} />
               </button>
@@ -149,7 +149,7 @@ export function Navbar() {
                     <Link
                       key={s.href}
                       href={s.href}
-                      className="block py-2 text-sm text-secondary/70"
+                      className="block py-2 text-sm text-foreground/85"
                       onClick={() => setMobileOpen(false)}
                     >
                       {s.label}
@@ -161,7 +161,7 @@ export function Navbar() {
             <div>
               <button
                 onClick={() => setCompanyOpen(!companyOpen)}
-                className="flex items-center justify-between w-full py-2 text-sm font-medium text-secondary"
+                className="flex items-center justify-between w-full py-2 text-sm font-medium text-foreground"
               >
                 Company <ChevronDown className={cn("h-4 w-4 transition-transform", companyOpen && "rotate-180")} />
               </button>
@@ -171,7 +171,7 @@ export function Navbar() {
                     <Link
                       key={c.href}
                       href={c.href}
-                      className="block py-2 text-sm text-secondary/70"
+                      className="block py-2 text-sm text-foreground/85"
                       onClick={() => setMobileOpen(false)}
                     >
                       {c.label}
@@ -182,21 +182,21 @@ export function Navbar() {
             </div>
             <Link
               href="/blog"
-              className="block py-2 text-sm font-medium text-secondary"
+              className="block py-2 text-sm font-medium text-foreground"
               onClick={() => setMobileOpen(false)}
             >
               Insights
             </Link>
             <Link
               href="/faqs"
-              className="block py-2 text-sm font-medium text-secondary"
+              className="block py-2 text-sm font-medium text-foreground"
               onClick={() => setMobileOpen(false)}
             >
               FAQs
             </Link>
             <Link
               href="/contact"
-              className="block py-2 text-sm font-medium text-secondary"
+              className="block py-2 text-sm font-medium text-foreground"
               onClick={() => setMobileOpen(false)}
             >
               Contact

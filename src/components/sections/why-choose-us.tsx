@@ -61,7 +61,7 @@ export function WhyChooseUs() {
               <Star className="h-3.5 w-3.5 text-brand-gold" />
               <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
             </div>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-5 leading-tight">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 leading-tight">
               Why Choose
               <br />
               <span className="text-primary">Amini Africa?</span>
@@ -92,7 +92,7 @@ export function WhyChooseUs() {
                 <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-white border border-primary/20 mb-4 group-hover:from-primary/25 group-hover:scale-105 transition-all duration-300">
                   <reason.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-secondary mb-2">
+                <h3 className="font-heading font-bold text-lg text-foreground mb-2">
                   {reason.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

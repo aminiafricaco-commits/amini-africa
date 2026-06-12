@@ -75,7 +75,7 @@ export default function FAQsPage() {
     <div className="pt-32 pb-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">

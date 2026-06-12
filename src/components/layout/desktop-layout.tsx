@@ -48,7 +48,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
             <nav className="flex items-center gap-8">
               {/* Services dropdown */}
               <div className="relative group">
-                <button className="flex items-center gap-1 text-sm font-medium text-secondary/70 hover:text-secondary transition-colors py-2">
+                <button className="flex items-center gap-1 text-sm font-medium text-foreground/85 hover:text-foreground transition-colors py-2">
                   Services <ChevronDown className="h-3.5 w-3.5" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
@@ -57,7 +57,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
                       <Link
                         key={s.href}
                         href={s.href}
-                        className="block px-5 py-2.5 text-sm text-secondary/70 hover:text-secondary hover:bg-accent/20 transition-colors"
+                        className="block px-5 py-2.5 text-sm text-foreground/85 hover:text-foreground hover:bg-accent/20 transition-colors"
                       >
                         {s.label}
                       </Link>
@@ -68,7 +68,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
 
               {/* Company dropdown */}
               <div className="relative group">
-                <button className="flex items-center gap-1 text-sm font-medium text-secondary/70 hover:text-secondary transition-colors py-2">
+                <button className="flex items-center gap-1 text-sm font-medium text-foreground/85 hover:text-foreground transition-colors py-2">
                   Company <ChevronDown className="h-3.5 w-3.5" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pt-2">
@@ -77,7 +77,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
                       <Link
                         key={c.href}
                         href={c.href}
-                        className="block px-5 py-2.5 text-sm text-secondary/70 hover:text-secondary hover:bg-accent/20 transition-colors"
+                        className="block px-5 py-2.5 text-sm text-foreground/85 hover:text-foreground hover:bg-accent/20 transition-colors"
                       >
                         {c.label}
                       </Link>
@@ -86,13 +86,13 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
 
-              <Link href="/blog" className="text-sm font-medium text-secondary/70 hover:text-secondary transition-colors">
+              <Link href="/blog" className="text-sm font-medium text-foreground/85 hover:text-foreground transition-colors">
                 Insights
               </Link>
-              <Link href="/faqs" className="text-sm font-medium text-secondary/70 hover:text-secondary transition-colors">
+              <Link href="/faqs" className="text-sm font-medium text-foreground/85 hover:text-foreground transition-colors">
                 FAQs
               </Link>
-              <Link href="/contact" className="text-sm font-medium text-secondary/70 hover:text-secondary transition-colors">
+              <Link href="/contact" className="text-sm font-medium text-foreground/85 hover:text-foreground transition-colors">
                 Contact
               </Link>
 

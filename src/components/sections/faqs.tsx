@@ -21,7 +21,7 @@ export function FAQsSection({ faqs }: FAQsSectionProps) {
     <Accordion type="single" collapsible className="w-full">
       {faqs.map((faq, index) => (
         <AccordionItem key={index} value={`item-${index}`}>
-          <AccordionTrigger className="text-left text-secondary font-medium">
+          <AccordionTrigger className="text-left text-foreground font-medium">
             {faq.question}
           </AccordionTrigger>
           <AccordionContent className="text-muted-foreground leading-relaxed">

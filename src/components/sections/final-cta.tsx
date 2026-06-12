@@ -32,7 +32,7 @@ export function FinalCTA() {
               Ready to Get Started?
             </h2>
             <div className="w-16 h-0.5 bg-primary/30 mb-6 rounded-full" />
-            <p className="text-lg md:text-xl text-foreground/70 leading-relaxed mb-8 max-w-xl">
+            <p className="text-lg md:text-xl text-foreground/85 leading-relaxed mb-8 max-w-xl">
               Take the first step toward confident engagement in Africa. Book a
               consultation and discover how we can be your trusted partner.
             </p>
@@ -43,7 +43,7 @@ export function FinalCTA() {
                   <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10">
                     <CheckCircle className="h-4 w-4 text-primary" />
                   </div>
-                  <span className="text-foreground/70 text-sm font-medium">{point}</span>
+                  <span className="text-foreground/85 text-sm font-medium">{point}</span>
                 </div>
               ))}
             </div>

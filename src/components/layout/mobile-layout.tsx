@@ -73,15 +73,15 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
               className="fixed top-0 right-0 bottom-0 z-50 w-[85vw] max-w-sm bg-white shadow-xl"
             >
               <div className="flex items-center justify-between px-4 h-14 border-b border-border">
-                <span className="font-semibold text-secondary">Menu</span>
-                <button onClick={() => setDrawerOpen(false)} className="text-secondary/60">
+                <span className="font-semibold text-foreground">Menu</span>
+                <button onClick={() => setDrawerOpen(false)} className="text-foreground/60">
                   <X className="h-6 w-6" />
                 </button>
               </div>
               <div className="overflow-y-auto h-[calc(100%-3.5rem)] px-4 py-4 space-y-1">
                 <Link
                   href="/"
-                  className="block py-3 text-base font-medium text-secondary"
+                  className="block py-3 text-base font-medium text-foreground"
                   onClick={() => setDrawerOpen(false)}
                 >
                   Home
@@ -90,7 +90,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                 <div>
                   <button
                     onClick={() => setServicesOpen(!servicesOpen)}
-                    className="flex items-center justify-between w-full py-3 text-base font-medium text-secondary"
+                    className="flex items-center justify-between w-full py-3 text-base font-medium text-foreground"
                   >
                     Services
                     <ChevronDown className={cn("h-4 w-4 transition-transform", servicesOpen && "rotate-180")} />
@@ -108,7 +108,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                             <Link
                               key={s.href}
                               href={s.href}
-                              className="block py-2.5 text-sm text-secondary/70"
+                              className="block py-2.5 text-sm text-foreground/85"
                               onClick={() => setDrawerOpen(false)}
                             >
                               {s.label}
@@ -123,7 +123,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                 <div>
                   <button
                     onClick={() => setCompanyOpen(!companyOpen)}
-                    className="flex items-center justify-between w-full py-3 text-base font-medium text-secondary"
+                    className="flex items-center justify-between w-full py-3 text-base font-medium text-foreground"
                   >
                     Company
                     <ChevronDown className={cn("h-4 w-4 transition-transform", companyOpen && "rotate-180")} />
@@ -141,7 +141,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                             <Link
                               key={c.href}
                               href={c.href}
-                              className="block py-2.5 text-sm text-secondary/70"
+                              className="block py-2.5 text-sm text-foreground/85"
                               onClick={() => setDrawerOpen(false)}
                             >
                               {c.label}
@@ -155,21 +155,21 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
 
                 <Link
                   href="/blog"
-                  className="block py-3 text-base font-medium text-secondary"
+                  className="block py-3 text-base font-medium text-foreground"
                   onClick={() => setDrawerOpen(false)}
                 >
                   Insights
                 </Link>
                 <Link
                   href="/faqs"
-                  className="block py-3 text-base font-medium text-secondary"
+                  className="block py-3 text-base font-medium text-foreground"
                   onClick={() => setDrawerOpen(false)}
                 >
                   FAQs
                 </Link>
                 <Link
                   href="/contact"
-                  className="block py-3 text-base font-medium text-secondary"
+                  className="block py-3 text-base font-medium text-foreground"
                   onClick={() => setDrawerOpen(false)}
                 >
                   Contact
@@ -205,11 +205,11 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
       {/* Bottom nav */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border safe-area-bottom">
         <div className="flex items-center justify-around h-16">
-          <Link href="/" className="flex flex-col items-center gap-0.5 text-secondary/60">
+          <Link href="/" className="flex flex-col items-center gap-0.5 text-foreground/60">
             <Home className="h-5 w-5" />
             <span className="text-[10px] font-medium">Home</span>
           </Link>
-          <Link href="/services" className="flex flex-col items-center gap-0.5 text-secondary/60">
+          <Link href="/services" className="flex flex-col items-center gap-0.5 text-foreground/60">
             <Menu className="h-5 w-5" />
             <span className="text-[10px] font-medium">Services</span>
           </Link>
@@ -222,7 +222,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
             </div>
             <span className="text-[10px] font-medium text-primary mt-0.5">Book</span>
           </Link>
-          <Link href="/contact" className="flex flex-col items-center gap-0.5 text-secondary/60">
+          <Link href="/contact" className="flex flex-col items-center gap-0.5 text-foreground/60">
             <Phone className="h-5 w-5" />
             <span className="text-[10px] font-medium">Contact</span>
           </Link>

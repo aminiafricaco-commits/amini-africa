@@ -57,7 +57,7 @@ export function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <div className="w-16 h-0.5 bg-primary/40 mx-auto mb-4 rounded-full" />
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/90 max-w-2xl mx-auto">
             Trusted by diaspora Africans, investors, and organizations worldwide.
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export function TestimonialsSection() {
               </div>
               <div className="relative">
                 <span className="absolute -top-1 -left-1 text-4xl text-foreground/10 font-serif leading-none">&ldquo;</span>
-                <p className="text-foreground/80 leading-relaxed mb-6 italic pl-5">
+                <p className="text-foreground/90 leading-relaxed mb-6 italic pl-5">
                   {t.quote}
                 </p>
               </div>

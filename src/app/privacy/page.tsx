@@ -10,7 +10,7 @@ export default function PrivacyPage() {
   return (
     <div className="pt-32 pb-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
           Privacy Policy
         </h1>
         <p className="text-sm text-muted-foreground mb-10">
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         </p>
 
         <div className="prose prose-stone max-w-none space-y-6 text-muted-foreground">
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             1. Introduction
           </h2>
           <p>
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
             visit our website or use our services.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             2. Information We Collect
           </h2>
           <p>
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
             <li>Website usage data through analytics tools</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             3. How We Use Your Information
           </h2>
           <p>We use your information to:</p>
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
             <li>Comply with legal obligations</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             4. Data Protection
           </h2>
           <p>
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
             transmission is 100% secure. We cannot guarantee absolute security.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             5. Third-Party Services
           </h2>
           <p>
@@ -73,7 +73,7 @@ export default function PrivacyPage() {
             privacy policies governing data handling.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             6. Your Rights
           </h2>
           <p>
@@ -82,7 +82,7 @@ export default function PrivacyPage() {
             these rights.
           </p>
 
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-foreground">
             7. Contact Us
           </h2>
           <p>

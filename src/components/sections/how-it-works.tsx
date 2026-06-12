@@ -46,7 +46,7 @@ export function HowItWorks() {
             <Layers className="h-3.5 w-3.5 text-brand-gold" />
             <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Process</span>
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             How It Works
           </h2>
           <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
@@ -87,7 +87,7 @@ export function HowItWorks() {
                   <div className="lg:hidden w-px h-8 bg-gradient-to-b from-primary/30 to-transparent mx-auto my-2" />
                 )}
 
-                <h3 className="font-heading text-xl font-bold text-secondary mb-3">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-3">
                   {step.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

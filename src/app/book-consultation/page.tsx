@@ -38,7 +38,7 @@ function StepIndicator({ current }: { current: number }) {
             </div>
             <span
               className={`text-xs mt-2 font-medium ${
-                s.num <= current ? "text-secondary" : "text-gray-400"
+                s.num <= current ? "text-foreground" : "text-gray-400"
               }`}
             >
               {s.label}
@@ -110,7 +110,7 @@ function BookingContent() {
               <Calendar className="h-3.5 w-3.5 text-brand-gold" />
               <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Get Started</span>
             </div>
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-3">
+            <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-3">
               Book a Consultation
             </h1>
             <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
@@ -146,7 +146,7 @@ function BookingContent() {
                 )}
               </div>
               <div className="flex-1">
-                <h3 className="font-heading font-bold text-secondary text-lg mb-1">
+                <h3 className="font-heading font-bold text-foreground text-lg mb-1">
                   Fill Questionnaire
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -196,7 +196,7 @@ function BookingContent() {
                 )}
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-heading font-bold text-secondary text-lg mb-1">
+                <h3 className="font-heading font-bold text-foreground text-lg mb-1">
                   Schedule Your Call
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -242,7 +242,7 @@ function BookingContent() {
                 <CreditCard className="h-5 w-5" />
               </div>
               <div className="flex-1">
-                <h3 className="font-heading font-bold text-secondary text-lg mb-1">
+                <h3 className="font-heading font-bold text-foreground text-lg mb-1">
                   Complete Payment &mdash; $50
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">

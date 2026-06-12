@@ -19,7 +19,7 @@ export function TrustBar() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center text-xs font-medium text-muted-foreground/60 uppercase tracking-[0.2em] mb-8"
+          className="text-center text-xs font-medium text-muted-foreground/80 uppercase tracking-[0.2em] mb-8"
         >
           Trusted by diaspora professionals, investors, and organizations
         </motion.p>
@@ -32,7 +32,7 @@ export function TrustBar() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="flex items-center gap-3 text-muted-foreground/40 hover:text-muted-foreground/60 transition-colors duration-300"
+              className="flex items-center gap-3 text-muted-foreground/60 hover:text-muted-foreground/80 transition-colors duration-300"
             >
               <div className="w-10 h-10 rounded-lg border border-current flex items-center justify-center">
                 <span className="text-xs font-bold tracking-wider">{logo.init}</span>

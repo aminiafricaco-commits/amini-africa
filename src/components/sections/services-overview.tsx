@@ -69,7 +69,7 @@ export function ServicesOverview() {
             <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
             <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">What We Offer</span>
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Our Services
           </h2>
           <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
@@ -101,7 +101,7 @@ export function ServicesOverview() {
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span className="text-primary text-xs font-medium tracking-wide uppercase">Most Requested</span>
                 </div>
-                <h3 className="font-heading text-2xl md:text-3xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-500">
+                <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-500">
                   {featured.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mb-4">
@@ -135,7 +135,7 @@ export function ServicesOverview() {
                     <service.icon className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-heading text-base font-bold text-secondary mb-1.5 group-hover:text-primary transition-colors duration-500">
+                    <h3 className="font-heading text-base font-bold text-foreground mb-1.5 group-hover:text-primary transition-colors duration-500">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">

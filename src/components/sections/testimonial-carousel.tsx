@@ -92,7 +92,7 @@ export function TestimonialCarousel() {
             What Our Clients Say
           </h2>
           <div className="w-16 h-0.5 bg-primary/40 mx-auto mb-4 rounded-full" />
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/90 max-w-2xl mx-auto">
             Trusted by diaspora Africans, investors, and organizations worldwide.
           </p>
         </motion.div>
@@ -116,7 +116,7 @@ export function TestimonialCarousel() {
               </div>
               <div className="relative mb-6">
                 <span className="absolute -top-3 -left-1 text-5xl text-foreground/10 font-serif leading-none">&ldquo;</span>
-                <p className="text-foreground/80 leading-relaxed text-lg italic pl-6">
+                <p className="text-foreground/90 leading-relaxed text-lg italic pl-6">
                   {t.quote}
                 </p>
               </div>

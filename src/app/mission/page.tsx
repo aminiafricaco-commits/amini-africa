@@ -35,7 +35,7 @@ export default function MissionPage() {
               <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-white border border-primary/20 mb-6">
                 <Target className="h-7 w-7 text-primary" />
               </div>
-              <h2 className="font-heading text-2xl font-bold text-secondary mb-4">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
                 Our Mission
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
@@ -54,7 +54,7 @@ export default function MissionPage() {
                 <h2 className="font-heading text-2xl font-bold mb-4">
                   Our Vision
                 </h2>
-                <p className="text-foreground/70 leading-relaxed text-lg">
+                <p className="text-foreground/85 leading-relaxed text-lg">
                   To become Africa&apos;s most trusted representation and support
                   partner for global clients, known for integrity, reliability, and
                   exceptional service delivery.
@@ -68,7 +68,7 @@ export default function MissionPage() {
               <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mx-auto mb-4">
                 <Heart className="h-7 w-7 text-primary" />
               </div>
-              <h2 className="font-heading text-2xl font-bold text-secondary mb-4">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
                 Our Core Promise
               </h2>
               <div className="w-12 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
@@ -95,7 +95,7 @@ export default function MissionPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Share Your Vision with Us
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             Let us help you turn your African aspirations into reality.
           </p>
           <Link

@@ -24,7 +24,7 @@ export default function FounderPage() {
               Meet the Founder
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl">
               Amini Africa was born from a deeply personal understanding of the
               challenges diaspora Africans face when managing affairs from abroad.
             </p>
@@ -56,14 +56,14 @@ export default function FounderPage() {
             <div className="lg:col-span-2">
               <div className="bg-gradient-to-br from-white/80 to-white/30 rounded-2xl p-8 lg:p-10 border border-primary/10">
                 <Quote className="h-10 w-10 text-primary/50 mb-6" />
-                <blockquote className="text-lg lg:text-xl text-secondary/90 leading-relaxed mb-6 italic">
+                <blockquote className="text-lg lg:text-xl text-foreground/90 leading-relaxed mb-6 italic">
                   &ldquo;We created Amini Africa because we believe no one should
                   have to choose between pursuing opportunities in Africa and
                   having peace of mind. Our clients deserve trusted representation
                   they can count on.&rdquo;
                 </blockquote>
                 <div className="border-t border-primary/20 pt-4">
-                  <p className="font-semibold text-secondary">Founder</p>
+                  <p className="font-semibold text-foreground">Founder</p>
                   <p className="text-sm text-muted-foreground">Amini Africa</p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function FounderPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Let&apos;s Talk About Your Needs
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             Every client relationship starts with a personal conversation. Book
             a consultation to discuss how we can support you.
           </p>

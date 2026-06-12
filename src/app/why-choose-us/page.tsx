@@ -78,7 +78,7 @@ export default function WhyChooseUsPage() {
               Why Choose Amini Africa?
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl">
               We provide the trust, transparency, and local expertise you need
               to operate confidently across Sub-Saharan Africa.
             </p>
@@ -97,7 +97,7 @@ export default function WhyChooseUsPage() {
                 <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-white border border-primary/20 mb-4 group-hover:from-primary/25 group-hover:scale-105 transition-all duration-300">
                   <reason.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-secondary mb-2">
+                <h3 className="font-heading font-bold text-lg text-foreground mb-2">
                   {reason.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -115,7 +115,7 @@ export default function WhyChooseUsPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Experience the Amini Africa Difference
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             See how trusted local representation can transform your engagement
             in Africa.
           </p>

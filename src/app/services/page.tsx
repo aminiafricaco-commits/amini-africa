@@ -98,7 +98,7 @@ export default function ServicesPage() {
             <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
             <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">What We Offer</span>
           </div>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
             Our Services
           </h1>
           <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mb-5">
                   <service.icon className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="font-heading text-2xl font-bold text-secondary mb-4">
+                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
                   {service.title}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                   {service.features.map((f) => (
                     <li key={f} className="flex items-start gap-3">
                       <ArrowRight className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                      <span className="text-secondary/80">{f}</span>
+                      <span className="text-foreground/90">{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -143,7 +143,7 @@ export default function ServicesPage() {
               </div>
               <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <div className="bg-gradient-to-br from-white/80 to-white/30 rounded-xl p-8 border border-primary/10 h-full">
-                  <h3 className="font-heading text-xl font-bold text-secondary mb-5">
+                  <h3 className="font-heading text-xl font-bold text-foreground mb-5">
                     Who Benefits
                   </h3>
                   <ul className="space-y-4">
@@ -157,7 +157,7 @@ export default function ServicesPage() {
                     ].map((benefit) => (
                       <li
                         key={benefit}
-                        className="flex items-center gap-3 text-secondary/80"
+                        className="flex items-center gap-3 text-foreground/90"
                       >
                         <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
                         {benefit}
@@ -176,7 +176,7 @@ export default function ServicesPage() {
             <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
               Not Sure Which Service You Need?
             </h2>
-            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+            <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
               Book a free consultation and we will help you identify the right
               solution for your specific needs.
             </p>

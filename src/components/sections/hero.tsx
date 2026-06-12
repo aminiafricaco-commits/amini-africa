@@ -50,7 +50,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-foreground/90 max-w-2xl mb-10 leading-relaxed"
           >
             Trusted local representation, property verification, procurement, and
             business support for diaspora Africans, investors, and organizations

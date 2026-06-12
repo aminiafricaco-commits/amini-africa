@@ -47,7 +47,7 @@ export default function AboutPage() {
               About Amini Africa
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl">
               We exist to solve a critical problem: diaspora Africans, international
               investors, and global professionals need trusted, accountable people
               on the ground in Africa.
@@ -76,7 +76,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mb-16">
-            <h2 className="font-heading text-2xl font-bold text-secondary mb-8 text-center">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">
               Our Values
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mx-auto mb-5">
                     <v.icon className="h-7 w-7 text-primary" />
                   </div>
-                  <h3 className="font-heading font-bold text-secondary text-lg mb-3">{v.title}</h3>
+                  <h3 className="font-heading font-bold text-foreground text-lg mb-3">{v.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{v.body}</p>
                 </div>
               ))}
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Ready to Work with Us?
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             Every client relationship starts with a conversation. Let us discuss
             how we can support your needs in Africa.
           </p>

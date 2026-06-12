@@ -55,7 +55,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl">
               We would love to hear from you. Whether you have a question about
               our services, need a quote, or want to discuss a specific project,
               we are here to help.
@@ -68,7 +68,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="font-heading text-2xl font-bold text-secondary mb-8">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-8">
                         Reach Us
               </h2>
               <div className="space-y-5">
@@ -78,7 +78,7 @@ export default function ContactPage() {
                       <ch.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-secondary mb-0.5">{ch.title}</h3>
+                      <h3 className="font-semibold text-foreground mb-0.5">{ch.title}</h3>
                       {ch.href ? (
                         <Link href={ch.href} target={ch.href.startsWith("http") ? "_blank" : undefined} className="text-primary font-medium hover:underline text-sm">
                           {ch.value} {ch.href.startsWith("http") && <ExternalLink className="h-3 w-3 inline" />}
@@ -103,12 +103,12 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-gradient-to-br from-white/60 to-white/20 rounded-2xl p-8 lg:p-10 border border-primary/10">
-              <h2 className="font-heading text-2xl font-bold text-secondary mb-6">
+              <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
                 Send Us a Message
               </h2>
               <div className="bg-white rounded-xl p-8 border border-border text-center">
                 <Mail className="h-16 w-16 text-primary mx-auto mb-4" />
-                <h3 className="font-heading font-bold text-secondary text-lg mb-2">
+                <h3 className="font-heading font-bold text-foreground text-lg mb-2">
                   Contact Form
                 </h3>
                 <p className="text-sm text-muted-foreground mb-6">
@@ -140,7 +140,7 @@ export default function ContactPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8">
             Book a consultation today and discover how Amini Africa can be your
             trusted partner on the ground in Sub-Saharan Africa.
           </p>

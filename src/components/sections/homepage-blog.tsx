@@ -44,7 +44,7 @@ export function HomepageBlog() {
             <BookOpen className="h-3.5 w-3.5 text-brand-gold" />
             <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Insights</span>
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
             Latest Insights
           </h2>
           <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
@@ -72,7 +72,7 @@ export function HomepageBlog() {
                   <span className="text-primary text-xs font-medium">{post.category}</span>
                 </div>
                 <p className="text-xs text-muted-foreground mb-2">{post.date}</p>
-                <h3 className="font-heading font-bold text-secondary text-base mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-heading font-bold text-foreground text-base mb-2 group-hover:text-primary transition-colors duration-300">
                   {post.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
