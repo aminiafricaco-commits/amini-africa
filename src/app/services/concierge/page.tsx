@@ -41,8 +41,8 @@ export default function ConciergePage() {
     <div className="relative">
       {/* Hero */}
       <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(107,114,128,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(107,114,128,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(107,114,128,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
             <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 mb-6">
@@ -52,11 +52,11 @@ export default function ConciergePage() {
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               <span className="text-primary font-medium text-xs tracking-widest uppercase">Concierge</span>
             </div>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Concierge & Lifestyle Management
             </h1>
             <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-white/70 leading-relaxed max-w-2xl mb-8">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mb-8">
               Let us handle the details. Our concierge services provide
               professional, discreet, and reliable support for all your personal
               and lifestyle needs across Africa.
@@ -137,13 +137,13 @@ export default function ConciergePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.08),transparent_60%)]" />
+      <section className="py-20 md:py-28 bg-secondary text-foreground relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(107,114,128,0.08),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Need Personal Support in Africa?
           </h2>
-          <p className="text-white/60 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/60 max-w-2xl mx-auto mb-8">
             Whether you need someone to handle errands, coordinate family
             matters, or manage your lifestyle needs, we are here to help.
           </p>

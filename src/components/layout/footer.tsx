@@ -27,30 +27,30 @@ const resources = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-white">
+    <footer className="bg-muted border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link href="/" className="inline-flex items-center mb-4">
-              <Logo size="md" variant="light" />
+              <Logo size="md" variant="dark" />
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed mb-4">
+            <p className="text-foreground/60 text-sm leading-relaxed mb-4">
               Your Trusted Sub-Saharan Partner for representation, verification,
               procurement, relocation, and business support services.
             </p>
-            <p className="text-white/40 text-xs">
+            <p className="text-foreground/40 text-xs">
               &copy; {new Date().getFullYear()} Amini Africa. All rights reserved.
             </p>
           </div>
 
           <div>
-            <h4 className="font-heading font-semibold text-white/80 mb-4">Services</h4>
+            <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((s) => (
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-white/60 hover:text-white text-sm transition-colors"
+                    className="text-foreground/60 hover:text-foreground text-sm transition-colors"
                   >
                     {s.label}
                   </Link>
@@ -60,13 +60,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white/80 mb-4">Company</h4>
+            <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-2">
               {company.map((c) => (
                 <li key={c.href}>
                   <Link
                     href={c.href}
-                    className="text-white/60 hover:text-white text-sm transition-colors"
+                    className="text-foreground/60 hover:text-foreground text-sm transition-colors"
                   >
                     {c.label}
                   </Link>
@@ -76,13 +76,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white/80 mb-4">Resources</h4>
+            <h4 className="font-semibold text-foreground mb-4">Resources</h4>
             <ul className="space-y-2">
               {resources.map((r) => (
                 <li key={r.href}>
                   <Link
                     href={r.href}
-                    className="text-white/60 hover:text-white text-sm transition-colors"
+                    className="text-foreground/60 hover:text-foreground text-sm transition-colors"
                   >
                     {r.label}
                   </Link>
@@ -92,7 +92,7 @@ export function Footer() {
             <div className="mt-6">
               <Link
                 href="/book-consultation"
-                className="inline-block bg-white text-secondary px-6 py-3 rounded-md text-sm font-semibold hover:bg-white/90 active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-white/30"
+                className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-md text-sm font-semibold hover:bg-primary/90 active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-primary/30"
               >
                 Book a Consultation
               </Link>

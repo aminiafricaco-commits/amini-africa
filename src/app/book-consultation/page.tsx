@@ -253,7 +253,7 @@ function BookingContent() {
                   <Link
                     href={PAYSTACK_URL}
                     target="_blank"
-                    className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-base hover:bg-secondary/90 active:scale-[0.97] transition-all duration-150 shadow-lg"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-base hover:bg-primary/90 active:scale-[0.97] transition-all duration-150 shadow-lg"
                   >
                     <CreditCard className="h-5 w-5" />
                     Pay $50 Now

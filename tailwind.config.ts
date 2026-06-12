@@ -31,11 +31,7 @@ const config: Config = {
         border: "rgb(var(--border) / <alpha-value>)",
         input: "rgb(var(--input) / <alpha-value>)",
         ring: "rgb(var(--ring) / <alpha-value>)",
-        brand: {
-          navy: "#0A1628",
-          "navy-light": "#1A2744",
-          charcoal: "#1A1A2E",
-        },
+        brand: {},
       },
       fontFamily: {
         display: ['"Playfair Display"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],

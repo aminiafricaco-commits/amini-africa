@@ -170,13 +170,13 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        <div className="mt-16 bg-secondary text-white rounded-2xl p-10 lg:p-14 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.1),transparent_60%)]" />
+        <div className="mt-16 bg-secondary text-foreground rounded-2xl p-10 lg:p-14 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(107,114,128,0.1),transparent_60%)]" />
           <div className="relative">
             <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
               Not Sure Which Service You Need?
             </h2>
-            <p className="text-white/60 max-w-2xl mx-auto mb-8">
+            <p className="text-foreground/60 max-w-2xl mx-auto mb-8">
               Book a free consultation and we will help you identify the right
               solution for your specific needs.
             </p>
