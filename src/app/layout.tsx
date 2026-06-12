@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Analytics } from "@/components/analytics";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+import { DesktopLayout } from "@/components/layout/desktop-layout";
+import { MobileLayout } from "@/components/layout/mobile-layout";
 import { WhatsAppButton } from "@/components/layout/whatsapp-button";
+import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -56,10 +57,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen bg-background antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        {/* Mobile layout: visible below lg */}
+        <div className="block lg:hidden">
+          <MobileLayout>{children}</MobileLayout>
+        </div>
+
+        {/* Desktop layout: visible at lg and above */}
+        <div className="hidden lg:block">
+          <DesktopLayout>
+            {children}
+            <Footer />
+          </DesktopLayout>
+        </div>
+
+        {/* WhatsApp button - shown on both */}
+        <div className="hidden lg:block">
+          <WhatsAppButton />
+        </div>
         <Analytics />
       </body>
     </html>
