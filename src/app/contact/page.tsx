@@ -115,7 +115,7 @@ export default function ContactPage() {
                 will be sent directly to our team.
               </p>
               <Link
-                href="https://tally.so/r/your-form-id"
+                href="https://tally.so/r/Gx7eZp"
                 target="_blank"
                 className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-md font-semibold hover:bg-brand-gold/90 transition-colors"
               >
