@@ -4,6 +4,7 @@ import { TrustBar } from "@/components/sections/trust-bar";
 import { ServicesOverview } from "@/components/sections/services-overview";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { HowItWorks } from "@/components/sections/how-it-works";
+import { WhoWeServe } from "@/components/sections/who-we-serve";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
 import { FeaturedCaseStudies } from "@/components/sections/featured-case-studies";
 import { FinalCTA } from "@/components/sections/final-cta";
@@ -23,6 +24,7 @@ export default function HomePage() {
       <ServicesOverview />
       <WhyChooseUs />
       <HowItWorks />
+      <WhoWeServe />
       <TestimonialCarousel />
       <FeaturedCaseStudies />
       <FinalCTA />

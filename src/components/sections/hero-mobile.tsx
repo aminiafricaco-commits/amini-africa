@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Shield, Users, Building2, Award } from "lucide-react";
+import { ArrowRight, MessageCircle, Shield, Users, Building2, Award, Sparkles } from "lucide-react";
 import { AnimatedCounter } from "@/components/sections/animated-counter";
 
 const metrics = [
@@ -15,7 +15,6 @@ const metrics = [
 export function MobileHero() {
   return (
     <section className="relative min-h-[90svh] flex items-center overflow-hidden">
-      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
@@ -23,8 +22,6 @@ export function MobileHero() {
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/85 via-secondary/70 to-secondary/85" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.15),transparent_60%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-
-      {/* Subtle grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
       <div className="relative w-full px-4 py-16 mt-6">
@@ -44,11 +41,12 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-heading text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
+          className="font-heading font-bold text-white leading-tight mb-4"
         >
-          Your Eyes & Ears
-          <br />
-          <span className="text-brand-gold">On the Ground</span> in Africa
+          <span className="text-3xl sm:text-4xl block">Your Eyes & Ears</span>
+          <span className="text-2xl sm:text-3xl text-brand-gold block mt-1">
+            On the Ground in Africa
+          </span>
         </motion.h1>
 
         <motion.p
@@ -98,10 +96,10 @@ export function MobileHero() {
                 <m.icon className="h-4 w-4 text-brand-gold" />
               </div>
               <div>
-                <p className="text-white font-bold text-sm leading-none mb-0.5">
+                <p className="text-white font-bold text-sm leading-none mb-0.5 font-heading">
                   <AnimatedCounter value={m.value} suffix={m.suffix} />
                 </p>
-                <p className="text-white/50 text-[10px] leading-tight">{m.label}</p>
+                <p className="text-white/50 text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
               </div>
             </div>
           ))}

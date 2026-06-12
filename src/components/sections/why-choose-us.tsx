@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Clock,
@@ -10,103 +11,96 @@ import {
   MapPin,
   UserCheck,
   Star,
+  ArrowRight,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const reasons = [
   {
-    icon: Clock,
-    title: "Save Time",
+    icon: UserCheck,
+    title: "Dedicated Local Representative",
     description:
-      "We handle everything on the ground so you can focus on what matters most.",
+      "Every client gets a personal representative who knows the local landscape and advocates for your interests.",
   },
   {
     icon: Shield,
-    title: "Protect Investments",
+    title: "Thorough Due Diligence",
     description:
-      "Thorough verification and due diligence to safeguard your interests.",
-  },
-  {
-    icon: SearchX,
-    title: "Avoid Fraud",
-    description:
-      "Rigorous checks and local knowledge help you avoid scams and bad deals.",
-  },
-  {
-    icon: DollarSign,
-    title: "Reduce Travel Costs",
-    description:
-      "Eliminate unnecessary travel. We are your eyes and ears on the ground.",
-  },
-  {
-    icon: Heart,
-    title: "Peace of Mind",
-    description:
-      "Sleep well knowing a trusted professional is managing your affairs.",
+      "Rigorous verification and fraud prevention to protect your investments and give you complete confidence.",
   },
   {
     icon: MapPin,
-    title: "Local Expertise",
+    title: "Deep Local Expertise",
     description:
-      "Deep knowledge of local markets, regulations, and business practices.",
+      "Insider knowledge of markets, regulations, and business practices across Sub-Saharan Africa.",
   },
   {
-    icon: UserCheck,
-    title: "Personalized Support",
+    icon: Clock,
+    title: "Save Time & Money",
     description:
-      "Every client gets a dedicated representative who understands their needs.",
+      "Eliminate unnecessary travel. We handle everything on the ground so you don't have to.",
   },
 ];
 
 export function WhyChooseUs() {
   return (
-    <section className="py-24 md:py-32 bg-brand-cream relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(197,165,114,0.06),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(197,165,114,0.04),transparent_50%)]" />
+    <section className="py-20 md:py-28 bg-brand-cream/60 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(197,165,114,0.06),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(197,165,114,0.04),transparent_50%)]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 bg-brand-gold/15 rounded-full px-4 py-1.5 mb-4">
-            <Star className="h-3.5 w-3.5 text-brand-gold" />
-            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
-          </div>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
-            Why Choose Amini Africa?
-          </h2>
-          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We provide the trust, transparency, and local expertise you need to
-            operate confidently across Africa.
-          </p>
-        </motion.div>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+          {/* Left: heading + intro */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="lg:col-span-2"
+          >
+            <div className="inline-flex items-center gap-2 bg-brand-gold/15 rounded-full px-4 py-1.5 mb-5">
+              <Star className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
+            </div>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-5 leading-tight">
+              Why Choose
+              <br />
+              <span className="text-brand-gold">Amini Africa?</span>
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Operating across Africa from abroad comes with real risks — fraud,
+              misinformation, logistical headaches. We eliminate those risks by
+              being your trusted eyes and ears on the ground.
+            </p>
+            <Button asChild variant="gold" size="lg" className="group">
+              <Link href="/book-consultation">
+                Start Your Journey <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </Button>
+          </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason, index) => (
-            <motion.div
-              key={reason.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="flex gap-4 bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-brand-gold/10 hover:border-brand-gold/30 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-gradient-to-br from-brand-gold/15 to-brand-cream border border-brand-gold/20 shrink-0">
-                <reason.icon className="h-5 w-5 text-brand-gold" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-heading font-semibold text-secondary mb-1">
+          {/* Right: benefit cards in 2x2 grid */}
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {reasons.map((reason, index) => (
+              <motion.div
+                key={reason.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                className="bg-white rounded-2xl p-6 border border-brand-gold/10 hover:border-brand-gold/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
+              >
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-brand-gold/15 to-brand-cream border border-brand-gold/20 mb-4 group-hover:from-brand-gold/25 group-hover:scale-105 transition-all duration-300">
+                  <reason.icon className="h-6 w-6 text-brand-gold" />
+                </div>
+                <h3 className="font-heading font-bold text-lg text-secondary mb-2">
                   {reason.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {reason.description}
                 </p>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

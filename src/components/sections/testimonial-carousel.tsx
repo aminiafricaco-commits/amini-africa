@@ -75,7 +75,7 @@ export function TestimonialCarousel() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-secondary text-white relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(197,165,114,0.08),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(197,165,114,0.05),transparent_50%)]" />
       <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-white/5 animate-float" />

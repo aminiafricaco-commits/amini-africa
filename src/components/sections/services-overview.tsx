@@ -51,9 +51,13 @@ const services = [
 ];
 
 export function ServicesOverview() {
+  const featured = services[1];
+  const rest = services.filter((s) => s.href !== featured.href);
+
   return (
-    <section className="py-24 md:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-28 md:py-36 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,34 +79,69 @@ export function ServicesOverview() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+        {/* Featured service — larger, hero-style card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link
+            href={featured.href}
+            className="group block relative overflow-hidden rounded-2xl border border-brand-gold/20 bg-gradient-to-br from-brand-cream via-white to-brand-cream/50 p-8 md:p-12 mb-8 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"
+          >
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-brand-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+            <div className="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
+              <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-white border border-brand-gold/20 shadow-sm shrink-0 group-hover:scale-110 group-hover:border-brand-gold/40 transition-all duration-500">
+                <featured.icon className="h-10 w-10 text-brand-gold" />
+              </div>
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-1.5 bg-brand-gold/10 rounded-full px-3 py-0.5 mb-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-gold" />
+                  <span className="text-brand-gold text-xs font-medium tracking-wide uppercase">Most Requested</span>
+                </div>
+                <h3 className="font-heading text-2xl md:text-3xl font-bold text-secondary mb-3 group-hover:text-brand-gold transition-colors duration-500">
+                  {featured.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed max-w-2xl mb-4">
+                  {featured.description}
+                </p>
+                <span className="inline-flex items-center text-sm font-semibold text-brand-gold group-hover:gap-3 transition-all duration-300">
+                  Learn More <ArrowRight className="ml-1 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
+                </span>
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
+        {/* Secondary services — compact 2x2 grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {rest.map((service, index) => (
             <motion.div
               key={service.href}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
             >
               <Link
                 href={service.href}
-                className="group block p-8 rounded-xl border border-border bg-white hover:border-brand-gold/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 h-full relative overflow-hidden"
+                className="group block p-6 rounded-xl border border-border bg-white hover:border-brand-gold/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-400 h-full relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-brand-gold/5 blur-2xl group-hover:bg-brand-gold/10 transition-all duration-500" />
-                <div className="relative">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 mb-5 group-hover:from-brand-gold/20 group-hover:to-brand-cream group-hover:scale-110 transition-all duration-500">
-                    <service.icon className="h-7 w-7 text-brand-gold" />
+                <div className="relative flex items-start gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 shrink-0 group-hover:from-brand-gold/20 group-hover:scale-110 transition-all duration-500">
+                    <service.icon className="h-6 w-6 text-brand-gold" />
                   </div>
-                  <h3 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-brand-gold transition-colors duration-500">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    {service.description}
-                  </p>
-                  <span className="inline-flex items-center text-sm font-medium text-brand-gold group-hover:gap-3 transition-all duration-300">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
-                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-heading text-base font-bold text-secondary mb-1.5 group-hover:text-brand-gold transition-colors duration-500">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </Link>
             </motion.div>
