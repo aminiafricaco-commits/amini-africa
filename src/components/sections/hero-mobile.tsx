@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Shield, Users, Building2, Award } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { AnimatedCounter } from "@/components/sections/animated-counter";
+import { getAnimatedIcon } from "@/components/ui/animated-icons";
 
 const metrics = [
-  { icon: Users, value: 500, suffix: "+", label: "Clients" },
-  { icon: Building2, value: 15, suffix: "+", label: "Countries" },
-  { icon: Shield, value: 5, suffix: "+", label: "Years" },
-  { icon: Award, value: 98, suffix: "%", label: "Satisfied" },
+  { icon: "agent", value: 500, suffix: "+", label: "Clients" },
+  { icon: "globe", value: 15, suffix: "+", label: "Countries" },
+  { icon: "shield", value: 5, suffix: "+", label: "Years" },
+  { icon: "star", value: 98, suffix: "%", label: "Satisfied" },
 ];
 
 export function MobileHero() {
@@ -22,7 +23,7 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-1.5 bg-brand-gold/10 rounded-full px-3 py-1 mb-5"
+          className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1 mb-5"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-brand-gold/60 animate-pulse" />
           <span className="text-brand-gold font-medium text-[10px] tracking-[0.15em] uppercase">
@@ -80,22 +81,25 @@ export function MobileHero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="grid grid-cols-2 gap-2.5"
         >
-          {metrics.map((m) => (
-            <div
-              key={m.label}
-              className="flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-xl px-3 py-2.5 border border-white/20"
-            >
-              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-black/20 backdrop-blur-sm border border-white/20 shrink-0">
-                <m.icon className="h-4 w-4 text-brand-gold" />
+          {metrics.map((m) => {
+            const IconComponent = getAnimatedIcon(m.icon);
+            return (
+              <div
+                key={m.label}
+                className="flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-xl px-3 py-2.5 border border-white/20"
+              >
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-black/20 backdrop-blur-sm border border-white/20 shrink-0">
+                  <IconComponent className="text-brand-gold w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-white font-bold text-sm leading-none mb-0.5 font-heading">
+                    <AnimatedCounter value={m.value} suffix={m.suffix} />
+                  </p>
+                  <p className="text-white/70 text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
+                </div>
               </div>
-              <div>
-                <p className="text-white font-bold text-sm leading-none mb-0.5 font-heading">
-                  <AnimatedCounter value={m.value} suffix={m.suffix} />
-                </p>
-                <p className="text-white/70 text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </motion.div>
       </div>
     </section>

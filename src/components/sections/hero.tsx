@@ -3,14 +3,15 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Users, Building2, Award } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { AnimatedCounter } from "@/components/sections/animated-counter";
+import { getAnimatedIcon } from "@/components/ui/animated-icons";
 
 const metrics = [
-  { icon: Users, value: 500, suffix: "+", label: "Clients Served" },
-  { icon: Building2, value: 15, suffix: "+", label: "African Countries" },
-  { icon: Shield, value: 5, suffix: "+", label: "Years Experience" },
-  { icon: Award, value: 98, suffix: "%", label: "Satisfaction Rate" },
+  { icon: "agent", value: 500, suffix: "+", label: "Clients Served" },
+  { icon: "globe", value: 15, suffix: "+", label: "African Countries" },
+  { icon: "shield", value: 5, suffix: "+", label: "Years Experience" },
+  { icon: "star", value: 98, suffix: "%", label: "Satisfaction Rate" },
 ];
 
 export function HeroSection() {
@@ -25,7 +26,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-8"
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-brand-gold/60 animate-pulse" />
             <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">
@@ -83,24 +84,27 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-3"
           >
-            {metrics.map((m) => (
-              <div
-                key={m.label}
-                className="group bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20 hover:border-white/40 hover:shadow-xl transition-all duration-300"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-black/20 backdrop-blur-sm border border-white/20 shrink-0">
-                    <m.icon className="h-5 w-5 text-brand-gold" />
-                  </div>
-                  <div>
-                    <p className="text-white font-bold text-2xl leading-none mb-0.5 font-heading">
-                      <AnimatedCounter value={m.value} suffix={m.suffix} />
-                    </p>
-                    <p className="text-white/70 text-xs leading-tight font-medium tracking-wide uppercase">{m.label}</p>
+            {metrics.map((m) => {
+              const IconComponent = getAnimatedIcon(m.icon);
+              return (
+                <div
+                  key={m.label}
+                  className="group bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20 hover:border-white/40 hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-black/20 backdrop-blur-sm border border-white/20 shrink-0">
+                      <IconComponent className="text-brand-gold w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-white font-bold text-2xl leading-none mb-0.5 font-heading">
+                        <AnimatedCounter value={m.value} suffix={m.suffix} />
+                      </p>
+                      <p className="text-white/70 text-xs leading-tight font-medium tracking-wide uppercase">{m.label}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </motion.div>
         </div>
       </div>
