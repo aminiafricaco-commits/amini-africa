@@ -83,15 +83,15 @@ export function WhyChooseUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.08 }}
-                  className="bg-white rounded-2xl p-6 border border-primary/10 hover:border-primary/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
+                  className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group"
                 >
-                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary/15 to-white border border-primary/20 mb-4 group-hover:from-primary/25 group-hover:scale-105 transition-all duration-300">
-                    <IconComponent className="text-primary" />
+                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-white/20 backdrop-blur-sm border border-white/20 mb-4 group-hover:bg-white/30 group-hover:scale-105 transition-all duration-300">
+                    <IconComponent className="text-brand-gold" />
                   </div>
-                  <h3 className="font-heading font-bold text-lg text-foreground mb-2">
+                  <h3 className="font-heading font-bold text-lg text-white mb-2">
                     {reason.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-white/70 leading-relaxed">
                     {reason.description}
                   </p>
                 </motion.div>
