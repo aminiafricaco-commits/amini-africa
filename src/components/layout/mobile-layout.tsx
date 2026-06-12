@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Home, Phone, Calendar, MessageCircle, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -32,9 +33,8 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
       {/* Top bar */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
         <div className="flex items-center justify-between px-4 h-14">
-          <Link href="/" className="flex items-center gap-1.5">
-            <span className="text-lg font-bold text-secondary font-heading">AMINI</span>
-            <span className="text-lg font-light text-brand-gold font-heading">AFRICA</span>
+          <Link href="/" className="flex items-center">
+            <Image src="/images/logo.png" alt="Amini Africa" width={140} height={38} className="h-8 w-auto" priority />
           </Link>
           <div className="flex items-center gap-2">
             <Link

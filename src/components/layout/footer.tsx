@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   { label: "Concierge Services", href: "/services/concierge" },
@@ -30,9 +31,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <span className="text-xl font-bold font-heading">AMINI</span>
-              <span className="text-xl font-light text-brand-gold font-heading">AFRICA</span>
+            <Link href="/" className="inline-flex items-center mb-4">
+              <Image src="/images/logo.png" alt="Amini Africa" width={160} height={45} className="h-10 w-auto" />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               Your Trusted Sub-Saharan Partner for representation, verification,

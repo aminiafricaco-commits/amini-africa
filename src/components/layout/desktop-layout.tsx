@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -40,9 +41,8 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border hidden lg:block">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
-            <Link href="/" className="flex items-center gap-2 shrink-0">
-              <span className="text-2xl font-bold text-secondary tracking-tight font-heading">AMINI</span>
-              <span className="text-2xl font-light text-brand-gold font-heading">AFRICA</span>
+            <Link href="/" className="flex items-center shrink-0">
+              <Image src="/images/logo.png" alt="Amini Africa" width={160} height={45} className="h-9 w-auto" priority />
             </Link>
 
             <nav className="flex items-center gap-8">
