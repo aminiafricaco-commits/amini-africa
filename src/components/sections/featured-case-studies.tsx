@@ -11,7 +11,7 @@ const studies = [
     description:
       "Complete title verification, site inspection, and due diligence report for a UK-based diaspora investor purchasing commercial property in Nairobi.",
     result: "Fraud prevented. Client saved $120,000.",
-    href: "/case-studies",
+    href: "/case-studies/property-due-diligence-nairobi",
     service: "Property Verification",
   },
   {
@@ -20,7 +20,7 @@ const studies = [
     description:
       "End-to-end vendor verification and supply chain monitoring for an NGO sourcing medical supplies across three East African countries.",
     result: "100% delivery compliance. 30% cost reduction.",
-    href: "/case-studies",
+    href: "/case-studies/supply-chain-ngo-east-africa",
     service: "Procurement Support",
   },
   {
@@ -29,7 +29,7 @@ const studies = [
     description:
       "Comprehensive market research, regulatory analysis, and partner identification for a SaaS company expanding into the African market.",
     result: "Launched in 4 countries within 6 months.",
-    href: "/case-studies",
+    href: "/case-studies/market-entry-saas-africa",
     service: "Business Support",
   },
 ];

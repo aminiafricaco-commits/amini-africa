@@ -8,13 +8,14 @@ import {
   Heart,
   MapPin,
   UserCheck,
+  Star,
   ArrowRight,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Why Choose Us",
   description:
-    "Discover why clients trust Amini Africa for representation, verification, and support services across Sub-Saharan Africa.",
+    "Discover why diaspora Africans, investors, and organizations trust Amini Africa for representation, verification, and support services across Sub-Saharan Africa.",
 };
 
 const reasons = [
@@ -22,97 +23,110 @@ const reasons = [
     icon: Clock,
     title: "Save Time",
     description:
-      "Stop spending hours trying to coordinate things from abroad. We handle everything on the ground, giving you back your most valuable resource: time.",
+      "We handle everything on the ground so you can focus on what matters most.",
   },
   {
     icon: Shield,
     title: "Protect Investments",
     description:
-      "Every transaction, verification, and inspection is handled with due diligence. We protect your financial interests through thorough checks and professional oversight.",
+      "Thorough verification and due diligence to safeguard your interests.",
   },
   {
     icon: SearchX,
     title: "Avoid Fraud",
     description:
-      "Real estate fraud, supplier scams, and fake investment opportunities are rampant. Our local knowledge and verification processes help you avoid costly mistakes.",
+      "Rigorous checks and local knowledge help you avoid scams and bad deals.",
   },
   {
     icon: DollarSign,
     title: "Reduce Travel Costs",
     description:
-      "Why spend thousands on flights and accommodation when we can be your eyes and ears on the ground? We provide detailed reports so you only travel when necessary.",
+      "Eliminate unnecessary travel. We are your eyes and ears on the ground.",
   },
   {
     icon: Heart,
     title: "Peace of Mind",
     description:
-      "Sleep well knowing a trusted professional is managing your affairs in Africa. We provide regular updates, photos, and complete transparency.",
+      "Sleep well knowing a trusted professional is managing your affairs.",
   },
   {
     icon: MapPin,
     title: "Local Expertise",
     description:
-      "Deep knowledge of local markets, customs, regulations, and business practices. We know the terrain, the players, and the potential pitfalls.",
+      "Deep knowledge of local markets, regulations, and business practices.",
   },
   {
     icon: UserCheck,
     title: "Personalized Support",
     description:
-      "You are not a ticket number. Every client gets a dedicated representative who understands their specific needs, preferences, and expectations.",
+      "Every client gets a dedicated representative who understands their needs.",
   },
 ];
 
 export default function WhyChooseUsPage() {
   return (
-    <div className="pt-32 pb-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
-            Why Choose Amini Africa?
-          </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            When you need someone you can trust on the ground in Africa, we are
-            the clear choice. Here is why clients around the world choose to
-            work with us.
-          </p>
+    <div className="relative">
+      <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(197,165,114,0.15),transparent_50%)]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-4 py-1.5 mb-5">
+              <Star className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
+            </div>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Why Choose Amini Africa?
+            </h1>
+            <div className="w-16 h-0.5 bg-brand-gold mb-6 rounded-full" />
+            <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
+              We provide the trust, transparency, and local expertise you need
+              to operate confidently across Sub-Saharan Africa.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div className="space-y-12 mb-16">
-          {reasons.map((r, index) => (
-            <div
-              key={r.title}
-              className={`flex flex-col ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } gap-8 items-center`}
-            >
-              <div className="flex-1">
-                <r.icon className="h-10 w-10 text-brand-gold mb-4" />
-                <h2 className="text-2xl font-bold text-secondary mb-3">
-                  {r.title}
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  {r.description}
+      <section className="py-20 md:py-28 bg-brand-cream/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reasons.map((reason, index) => (
+              <div
+                key={reason.title}
+                className="bg-white rounded-2xl p-6 border border-brand-gold/10 hover:border-brand-gold/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
+              >
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-brand-gold/15 to-brand-cream border border-brand-gold/20 mb-4 group-hover:from-brand-gold/25 group-hover:scale-105 transition-all duration-300">
+                  <reason.icon className="h-6 w-6 text-brand-gold" />
+                </div>
+                <h3 className="font-heading font-bold text-lg text-secondary mb-2">
+                  {reason.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {reason.description}
                 </p>
               </div>
-              <div className="flex-1 bg-brand-cream rounded-xl p-8 h-48 flex items-center justify-center">
-                <r.icon className="h-24 w-24 text-brand-gold/20" />
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      </section>
 
-        <div className="text-center bg-brand-cream rounded-xl p-10">
-          <h2 className="text-2xl font-bold text-secondary mb-4">
+      <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.08),transparent_60%)]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+          <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Experience the Amini Africa Difference
           </h2>
+          <p className="text-white/60 max-w-2xl mx-auto mb-8">
+            See how trusted local representation can transform your engagement
+            in Africa.
+          </p>
           <Link
             href="/book-consultation"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-md font-semibold hover:bg-brand-gold/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
           >
             Book a Consultation <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { DesktopLayout } from "@/components/layout/desktop-layout";
 import { MobileLayout } from "@/components/layout/mobile-layout";
 import { WhatsAppButton } from "@/components/layout/whatsapp-button";
 import { Footer } from "@/components/layout/footer";
+import { PageTransition } from "@/components/layout/page-transition";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -59,16 +60,44 @@ export default function RootLayout({
       <body className="min-h-screen bg-background antialiased">
         {/* Mobile layout: visible below lg */}
         <div className="block lg:hidden">
-          <MobileLayout>{children}</MobileLayout>
+          <MobileLayout>
+            <PageTransition>{children}</PageTransition>
+          </MobileLayout>
         </div>
 
         {/* Desktop layout: visible at lg and above */}
         <div className="hidden lg:block">
           <DesktopLayout>
-            {children}
+            <PageTransition>{children}</PageTransition>
             <Footer />
           </DesktopLayout>
         </div>
+
+        {/* Structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Amini Africa",
+              url: "https://aminiafrica.co",
+              email: "aminiafrica.co@gmail.com",
+              telephone: "+254743634581",
+              description:
+                "Trusted representation, verification, procurement, relocation, and business support services across Sub-Saharan Africa.",
+              areaServed: "Sub-Saharan Africa",
+              priceRange: "$",
+              sameAs: ["https://wa.me/254743634581"],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+254743634581",
+                contactType: "customer service",
+                availableLanguage: ["English"],
+              },
+            }),
+          }}
+        />
 
         {/* WhatsApp button - shown on both */}
         <div className="hidden lg:block">

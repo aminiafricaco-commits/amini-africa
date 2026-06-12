@@ -7,6 +7,7 @@ import { HowItWorks } from "@/components/sections/how-it-works";
 import { WhoWeServe } from "@/components/sections/who-we-serve";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
 import { FeaturedCaseStudies } from "@/components/sections/featured-case-studies";
+import { HomepageBlog } from "@/components/sections/homepage-blog";
 import { FinalCTA } from "@/components/sections/final-cta";
 
 export default function HomePage() {
@@ -27,6 +28,7 @@ export default function HomePage() {
       <WhoWeServe />
       <TestimonialCarousel />
       <FeaturedCaseStudies />
+      <HomepageBlog />
       <FinalCTA />
     </>
   );
