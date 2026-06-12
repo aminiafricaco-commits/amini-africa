@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Shield, Users, Building2, Award } from "lucide-react";
+import { AnimatedCounter } from "@/components/sections/animated-counter";
 
 const metrics = [
-  { icon: Users, value: "500+", label: "Clients" },
-  { icon: Building2, value: "15+", label: "Countries" },
-  { icon: Shield, value: "5+", label: "Years" },
-  { icon: Award, value: "98%", label: "Satisfied" },
+  { icon: Users, value: 500, suffix: "+", label: "Clients" },
+  { icon: Building2, value: 15, suffix: "+", label: "Countries" },
+  { icon: Shield, value: 5, suffix: "+", label: "Years" },
+  { icon: Award, value: 98, suffix: "%", label: "Satisfied" },
 ];
 
 export function MobileHero() {
@@ -97,7 +98,9 @@ export function MobileHero() {
                 <m.icon className="h-4 w-4 text-brand-gold" />
               </div>
               <div>
-                <p className="text-white font-bold text-sm leading-none mb-0.5">{m.value}</p>
+                <p className="text-white font-bold text-sm leading-none mb-0.5">
+                  <AnimatedCounter value={m.value} suffix={m.suffix} />
+                </p>
                 <p className="text-white/50 text-[10px] leading-tight">{m.label}</p>
               </div>
             </div>

@@ -4,7 +4,7 @@ import { useEffect, useState, Suspense, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
-import { ClipboardList, CreditCard, Calendar, CheckCircle, ArrowRight, ExternalLink } from "lucide-react";
+import { ClipboardList, CreditCard, Calendar, CheckCircle, ArrowRight, ExternalLink, Shield } from "lucide-react";
 
 const TALLY_FORM_URL = "https://tally.so/r/Gx7eZp";
 const CALENDLY_URL = "https://calendly.com/aminiafrica-co";
@@ -101,14 +101,21 @@ function BookingContent() {
         strategy="lazyOnload"
       />
 
-      <div className="min-h-screen bg-background pt-28 pb-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
+      <div className="min-h-screen bg-background pt-28 pb-24 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(197,165,114,0.05),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(197,165,114,0.03),transparent_50%)]" />
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+              <Calendar className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Get Started</span>
+            </div>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-3">
               Book a Consultation
             </h1>
-            <p className="text-muted-foreground">
-              Complete all three steps. Each step unlocks the next automatically.
+            <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
+            <p className="text-muted-foreground max-w-lg mx-auto">
+              Complete all three steps below. Each step unlocks the next automatically.
             </p>
           </div>
 
@@ -273,7 +280,24 @@ function BookingContent() {
             </div>
           )}
 
-          <div className="text-center mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-10 pt-8 border-t border-border">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Shield className="h-4 w-4 text-brand-gold" />
+              <span>Secure & encrypted</span>
+            </div>
+            <div className="w-px h-4 bg-border" />
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <CreditCard className="h-4 w-4 text-brand-gold" />
+              <span>Pay $50 via Paystack</span>
+            </div>
+            <div className="w-px h-4 bg-border" />
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Calendar className="h-4 w-4 text-brand-gold" />
+              <span>30-min video call</span>
+            </div>
+          </div>
+
+          <div className="text-center mt-6">
             <p className="text-sm text-muted-foreground">
               Questions?{" "}
               <Link

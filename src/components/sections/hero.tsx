@@ -4,12 +4,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Users, Building2, Award } from "lucide-react";
+import { AnimatedCounter } from "@/components/sections/animated-counter";
 
 const metrics = [
-  { icon: Users, value: "500+", label: "Clients Served" },
-  { icon: Building2, value: "15+", label: "African Countries" },
-  { icon: Shield, value: "5+", label: "Years Experience" },
-  { icon: Award, value: "98%", label: "Satisfaction Rate" },
+  { icon: Users, value: 500, suffix: "+", label: "Clients Served" },
+  { icon: Building2, value: 15, suffix: "+", label: "African Countries" },
+  { icon: Shield, value: 5, suffix: "+", label: "Years Experience" },
+  { icon: Award, value: 98, suffix: "%", label: "Satisfaction Rate" },
 ];
 
 export function HeroSection() {
@@ -101,7 +102,9 @@ export function HeroSection() {
                   <m.icon className="h-5 w-5 text-brand-gold" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-lg leading-none mb-0.5">{m.value}</p>
+                  <p className="text-white font-bold text-lg leading-none mb-0.5">
+                    <AnimatedCounter value={m.value} suffix={m.suffix} />
+                  </p>
                   <p className="text-white/50 text-xs leading-tight">{m.label}</p>
                 </div>
               </div>
