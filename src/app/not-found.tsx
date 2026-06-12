@@ -17,7 +17,7 @@ export default function NotFound() {
           Page Not Found
         </h1>
         <div className="w-16 h-0.5 bg-primary/40 mx-auto mb-6 rounded-full" />
-        <p className="text-foreground/60 max-w-md mx-auto mb-10">
+        <p className="text-foreground/80 max-w-md mx-auto mb-10">
           The page you are looking for does not exist or has been moved.
           Let us help you find what you need.
         </p>
@@ -37,7 +37,7 @@ export default function NotFound() {
             Contact Us
           </Link>
         </div>
-        <div className="mt-8 flex items-center justify-center gap-6 text-sm text-foreground/40">
+        <div className="mt-8 flex items-center justify-center gap-6 text-sm text-foreground/80">
           <Link href="/about" className="hover:text-foreground/80 transition-colors">About</Link>
           <Link href="/blog" className="hover:text-foreground/80 transition-colors">Insights</Link>
           <Link href="/contact" className="hover:text-foreground/80 transition-colors">Contact</Link>

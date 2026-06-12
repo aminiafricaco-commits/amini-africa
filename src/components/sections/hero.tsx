@@ -24,10 +24,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-8"
+            className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-primary/60 animate-pulse" />
-            <span className="text-primary font-medium text-xs tracking-widest uppercase">
+            <span className="w-2 h-2 rounded-full bg-brand-gold/60 animate-pulse" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">
               Trusted Across Sub-Saharan Africa
             </span>
           </motion.div>
@@ -41,7 +41,7 @@ export function HeroSection() {
             <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight">
               Your Trusted
             </span>
-            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-foreground/70 font-medium mt-2">
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-brand-gold font-medium mt-2">
               Sub-Saharan Partner
             </span>
           </motion.h1>
@@ -50,7 +50,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/60 max-w-2xl mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-10 leading-relaxed"
           >
             Trusted local representation, property verification, procurement, and
             business support for diaspora Africans, investors, and organizations
@@ -88,8 +88,8 @@ export function HeroSection() {
                 className="group relative bg-white rounded-2xl px-5 py-4 border border-border hover:border-primary/30 hover:shadow-md transition-all duration-500"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 shrink-0">
-                    <m.icon className="h-5 w-5 text-primary" />
+                  <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-brand-gold/10 shrink-0">
+                    <m.icon className="h-5 w-5 text-brand-gold" />
                   </div>
                   <div>
                     <p className="text-foreground font-bold text-2xl leading-none mb-0.5 font-heading">

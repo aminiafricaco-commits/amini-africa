@@ -58,8 +58,8 @@ export function WhyChooseUs() {
             className="lg:col-span-2"
           >
             <div className="inline-flex items-center gap-2 bg-primary/15 rounded-full px-4 py-1.5 mb-5">
-              <Star className="h-3.5 w-3.5 text-primary" />
-              <span className="text-primary font-medium text-xs tracking-widest uppercase">Why Us</span>
+              <Star className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
             </div>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-5 leading-tight">
               Why Choose

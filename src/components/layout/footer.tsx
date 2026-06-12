@@ -34,11 +34,11 @@ export function Footer() {
             <Link href="/" className="inline-flex items-center mb-4">
               <Logo size="md" variant="dark" />
             </Link>
-            <p className="text-foreground/60 text-sm leading-relaxed mb-4">
+            <p className="text-foreground/80 text-sm leading-relaxed mb-4">
               Your Trusted Sub-Saharan Partner for representation, verification,
               procurement, relocation, and business support services.
             </p>
-            <p className="text-foreground/40 text-xs">
+            <p className="text-foreground/80 text-xs">
               &copy; {new Date().getFullYear()} Amini Africa. All rights reserved.
             </p>
           </div>
@@ -50,7 +50,7 @@ export function Footer() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-foreground/60 hover:text-foreground text-sm transition-colors"
+                    className="text-foreground/80 hover:text-foreground text-sm transition-colors"
                   >
                     {s.label}
                   </Link>
@@ -66,7 +66,7 @@ export function Footer() {
                 <li key={c.href}>
                   <Link
                     href={c.href}
-                    className="text-foreground/60 hover:text-foreground text-sm transition-colors"
+                    className="text-foreground/80 hover:text-foreground text-sm transition-colors"
                   >
                     {c.label}
                   </Link>
@@ -82,7 +82,7 @@ export function Footer() {
                 <li key={r.href}>
                   <Link
                     href={r.href}
-                    className="text-foreground/60 hover:text-foreground text-sm transition-colors"
+                    className="text-foreground/80 hover:text-foreground text-sm transition-colors"
                   >
                     {r.label}
                   </Link>

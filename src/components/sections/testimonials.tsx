@@ -49,15 +49,15 @@ export function TestimonialsSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
-            <MessageCircle className="h-3.5 w-3.5 text-primary" />
-            <span className="text-primary font-medium text-xs tracking-widest uppercase">Testimonials</span>
+          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+            <MessageCircle className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Testimonials</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             What Our Clients Say
           </h2>
           <div className="w-16 h-0.5 bg-primary/40 mx-auto mb-4 rounded-full" />
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
             Trusted by diaspora Africans, investors, and organizations worldwide.
           </p>
         </motion.div>

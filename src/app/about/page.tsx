@@ -40,8 +40,8 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
-              <Heart className="h-3.5 w-3.5 text-primary" />
-              <span className="text-primary font-medium text-xs tracking-widest uppercase">About Us</span>
+              <Heart className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">About Us</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               About Amini Africa
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Ready to Work with Us?
           </h2>
-          <p className="text-foreground/60 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
             Every client relationship starts with a conversation. Let us discuss
             how we can support your needs in Africa.
           </p>

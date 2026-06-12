@@ -71,8 +71,8 @@ export default function IndustriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
-              <Sparkles className="h-3.5 w-3.5 text-primary" />
-              <span className="text-primary font-medium text-xs tracking-widest uppercase">Industries</span>
+              <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Industries</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Industries We Serve
@@ -120,7 +120,7 @@ export default function IndustriesPage() {
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Not Sure Where You Fit?
           </h2>
-          <p className="text-foreground/60 max-w-2xl mx-auto mb-8">
+          <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
             Contact us and we will help identify the right support for your needs.
           </p>
           <Link

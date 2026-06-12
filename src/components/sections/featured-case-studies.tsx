@@ -46,9 +46,9 @@ export function FeaturedCaseStudies() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
-            <BarChart3 className="h-3.5 w-3.5 text-primary" />
-            <span className="text-primary font-medium text-xs tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+            <BarChart3 className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">
               Results
             </span>
           </div>

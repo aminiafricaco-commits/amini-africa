@@ -106,9 +106,9 @@ function BookingContent() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(10,22,40,0.03),transparent_50%)]" />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
-              <Calendar className="h-3.5 w-3.5 text-primary" />
-              <span className="text-primary font-medium text-xs tracking-widest uppercase">Get Started</span>
+            <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+              <Calendar className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Get Started</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-3">
               Book a Consultation

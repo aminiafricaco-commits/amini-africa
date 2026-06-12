@@ -20,10 +20,10 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-3 py-1 mb-5"
+          className="inline-flex items-center gap-1.5 bg-brand-gold/10 rounded-full px-3 py-1 mb-5"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-primary/60 animate-pulse" />
-          <span className="text-primary font-medium text-[10px] tracking-[0.15em] uppercase">
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-gold/60 animate-pulse" />
+          <span className="text-brand-gold font-medium text-[10px] tracking-[0.15em] uppercase">
             Trusted Across Africa
           </span>
         </motion.div>
@@ -35,7 +35,7 @@ export function MobileHero() {
           className="font-heading font-bold text-foreground leading-tight mb-4"
         >
           <span className="text-3xl sm:text-4xl block">Your Trusted</span>
-          <span className="text-2xl sm:text-3xl text-foreground/70 block mt-1">
+          <span className="text-2xl sm:text-3xl text-brand-gold block mt-1">
             Sub-Saharan Partner
           </span>
         </motion.h1>
@@ -44,7 +44,7 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-sm sm:text-base text-foreground/60 leading-relaxed mb-8"
+          className="text-sm sm:text-base text-foreground/80 leading-relaxed mb-8"
         >
           Trusted local representation, property verification, procurement, and
           business support for diaspora Africans across Sub-Saharan Africa.
@@ -83,8 +83,8 @@ export function MobileHero() {
               key={m.label}
               className="flex items-center gap-2 bg-white rounded-xl px-3 py-2.5 border border-border"
             >
-              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 shrink-0">
-                <m.icon className="h-4 w-4 text-primary" />
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-brand-gold/10 shrink-0">
+                <m.icon className="h-4 w-4 text-brand-gold" />
               </div>
               <div>
                 <p className="text-foreground font-bold text-sm leading-none mb-0.5 font-heading">

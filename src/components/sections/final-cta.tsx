@@ -24,9 +24,9 @@ export function FinalCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-5">
-              <Shield className="h-3.5 w-3.5 text-primary" />
-              <span className="text-primary font-medium text-xs tracking-widest uppercase">Start Today</span>
+            <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-5">
+              <Shield className="h-3.5 w-3.5 text-brand-gold" />
+              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Start Today</span>
             </div>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Ready to Get Started?

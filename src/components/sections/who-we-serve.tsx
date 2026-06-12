@@ -46,15 +46,15 @@ export function WhoWeServe() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
-            <Heart className="h-3.5 w-3.5 text-primary" />
-            <span className="text-primary font-medium text-xs tracking-widest uppercase">Who We Serve</span>
+          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+            <Heart className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Who We Serve</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Your Trusted Partner
           </h2>
           <div className="w-16 h-0.5 bg-primary/40 mx-auto mb-4 rounded-full" />
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
             Whether you are an individual, investor, or organization, we provide
             the local presence and expertise you need.
           </p>
@@ -78,7 +78,7 @@ export function WhoWeServe() {
                   <h3 className="font-heading text-xl font-bold text-foreground mb-2">
                     {seg.title}
                   </h3>
-                  <p className="text-foreground/60 text-sm leading-relaxed mb-4">
+                  <p className="text-foreground/80 text-sm leading-relaxed mb-4">
                     {seg.description}
                   </p>
                   <div className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-3 py-1">
@@ -98,7 +98,7 @@ export function WhoWeServe() {
           transition={{ duration: 0.4, delay: 0.4 }}
           className="text-center mt-10"
         >
-          <p className="text-foreground/40 text-sm">
+          <p className="text-foreground/80 text-sm">
             Not sure which category fits?{" "}
             <Link href="/contact" className="text-primary hover:underline font-medium">
               Contact us

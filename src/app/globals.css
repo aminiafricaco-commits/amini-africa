@@ -8,15 +8,15 @@
   :root {
     --radius: 0.5rem;
     --background: 255 255 255;
-    --foreground: 55 65 81;
+    --foreground: 17 24 39;
     --card: 255 255 255;
-    --card-foreground: 55 65 81;
+    --card-foreground: 17 24 39;
     --primary: 107 114 128;
     --primary-foreground: 255 255 255;
     --secondary: 243 244 246;
-    --secondary-foreground: 55 65 81;
+    --secondary-foreground: 17 24 39;
     --muted: 249 250 251;
-    --muted-foreground: 156 163 175;
+    --muted-foreground: 75 85 99;
     --accent: 107 114 128;
     --accent-foreground: 255 255 255;
     --destructive: 239 68 68;

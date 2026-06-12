@@ -31,7 +31,9 @@ const config: Config = {
         border: "rgb(var(--border) / <alpha-value>)",
         input: "rgb(var(--input) / <alpha-value>)",
         ring: "rgb(var(--ring) / <alpha-value>)",
-        brand: {},
+        brand: {
+          gold: "#C8932A",
+        },
       },
       fontFamily: {
         display: ['"Playfair Display"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],

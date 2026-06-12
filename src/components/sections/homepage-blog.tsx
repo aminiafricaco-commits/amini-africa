@@ -40,9 +40,9 @@ export function HomepageBlog() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
-            <BookOpen className="h-3.5 w-3.5 text-primary" />
-            <span className="text-primary font-medium text-xs tracking-widest uppercase">Insights</span>
+          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+            <BookOpen className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Insights</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
             Latest Insights
