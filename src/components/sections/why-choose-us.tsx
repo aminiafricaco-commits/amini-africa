@@ -67,7 +67,7 @@ export function WhyChooseUs() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
             Why Choose Amini Africa?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -76,7 +76,7 @@ export function WhyChooseUs() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((reason, index) => (
             <motion.div
               key={reason.title}
@@ -84,11 +84,13 @@ export function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="flex gap-4"
+              className="flex gap-4 bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-brand-gold/10 hover:border-brand-gold/30 hover:shadow-lg transition-all duration-300"
             >
-              <reason.icon className="h-6 w-6 text-brand-gold mt-1 shrink-0" />
-              <div>
-                <h3 className="font-semibold text-secondary mb-1">
+              <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-gradient-to-br from-brand-gold/15 to-brand-cream border border-brand-gold/20 shrink-0">
+                <reason.icon className="h-5 w-5 text-brand-gold" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-heading font-semibold text-secondary mb-1">
                   {reason.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

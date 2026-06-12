@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
 const testimonials = [
   {
     quote:
-      "Amini Africa handled the verification of a property I was investing in back home. Their detailed report and photos gave me complete confidence in my purchase. I couldn't have done this without them.",
+      "Amini Africa handled the verification of a property I was investing in back home. Their detailed report and photos gave me complete confidence in my purchase. I could not have done this without them.",
     author: "Michael O.",
     role: "Diaspora Investor, United Kingdom",
     rating: 5,
+    initials: "MO",
   },
   {
     quote:
@@ -17,13 +18,15 @@ const testimonials = [
     author: "Sarah & David K.",
     role: "Returning Diaspora, Canada",
     rating: 5,
+    initials: "SK",
   },
   {
     quote:
-      "As an NGO, we needed reliable partners on the ground for our supply chain. Amini Africa's vendor verification and monitoring services have been invaluable.",
+      "As an NGO, we needed reliable partners on the ground for our supply chain. Amini Africa vendor verification and monitoring services have been invaluable.",
     author: "Dr. James M.",
     role: "NGO Director, United States",
     rating: 5,
+    initials: "JM",
   },
   {
     quote:
@@ -31,6 +34,7 @@ const testimonials = [
     author: "Chioma A.",
     role: "Business Executive, UAE",
     rating: 5,
+    initials: "CA",
   },
 ];
 
@@ -45,7 +49,7 @@ export function TestimonialsSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             What Our Clients Say
           </h2>
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
@@ -61,20 +65,24 @@ export function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10"
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:border-brand-gold/30 hover:bg-white/[0.07] transition-all duration-300"
             >
-              <Quote className="h-8 w-8 text-brand-gold/50 mb-4" />
-              <p className="text-white/80 leading-relaxed mb-6">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="flex items-center gap-1 mb-3">
+              <div className="flex items-center gap-1 mb-4">
                 {Array.from({ length: t.rating }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-brand-gold text-brand-gold" />
                 ))}
               </div>
-              <div>
-                <p className="font-semibold text-white">{t.author}</p>
-                <p className="text-sm text-white/50">{t.role}</p>
+              <p className="text-white/80 leading-relaxed mb-6 italic">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-brand-gold/20 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-sm font-semibold">
+                  {t.initials}
+                </div>
+                <div>
+                  <p className="font-semibold text-white text-sm">{t.author}</p>
+                  <p className="text-xs text-white/50">{t.role}</p>
+                </div>
               </div>
             </motion.div>
           ))}

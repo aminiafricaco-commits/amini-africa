@@ -41,9 +41,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+        display: ['"Playfair Display"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
         sans: [
-          '"Inter"',
+          '"Outfit"',
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -56,6 +56,10 @@ const config: Config = {
         "fade-up": "fadeUp 0.5s ease-out forwards",
         "fade-in": "fadeIn 0.6s ease-out forwards",
         "slide-up": "slideUp 0.7s ease-out forwards",
+        "fade-in-left": "fadeInLeft 0.6s ease-out forwards",
+        "fade-in-right": "fadeInRight 0.6s ease-out forwards",
+        "scale-in": "scaleIn 0.5s ease-out forwards",
+        "float": "float 6s ease-in-out infinite",
         "accordion-down": "accordionDown 0.2s ease-out",
         "accordion-up": "accordionUp 0.2s ease-out",
       },
@@ -71,6 +75,22 @@ const config: Config = {
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(40px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-30px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        fadeInRight: {
+          "0%": { opacity: "0", transform: "translateX(30px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        scaleIn: {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
         },
         accordionDown: {
           from: { height: "0" },

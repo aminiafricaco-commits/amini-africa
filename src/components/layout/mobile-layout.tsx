@@ -33,8 +33,8 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
         <div className="flex items-center justify-between px-4 h-14">
           <Link href="/" className="flex items-center gap-1.5">
-            <span className="text-lg font-bold text-secondary">AMINI</span>
-            <span className="text-lg font-light text-brand-gold">AFRICA</span>
+            <span className="text-lg font-bold text-secondary font-heading">AMINI</span>
+            <span className="text-lg font-light text-brand-gold font-heading">AFRICA</span>
           </Link>
           <div className="flex items-center gap-2">
             <Link
@@ -178,7 +178,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                 <div className="pt-4 space-y-3">
                   <Link
                     href="/book-consultation"
-                    className="block w-full text-center bg-brand-gold text-secondary py-3.5 rounded-lg font-semibold text-base"
+                    className="block w-full text-center bg-brand-gold text-secondary py-3.5 rounded-lg font-semibold text-base active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-brand-gold/30"
                     onClick={() => setDrawerOpen(false)}
                   >
                     Book a Consultation

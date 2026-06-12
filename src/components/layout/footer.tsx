@@ -31,8 +31,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <span className="text-xl font-bold">AMINI</span>
-              <span className="text-xl font-light text-brand-gold">AFRICA</span>
+              <span className="text-xl font-bold font-heading">AMINI</span>
+              <span className="text-xl font-light text-brand-gold font-heading">AFRICA</span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               Your Trusted Sub-Saharan Partner for representation, verification,
@@ -44,7 +44,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-brand-gold mb-4">Services</h4>
+            <h4 className="font-heading font-semibold text-brand-gold mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((s) => (
                 <li key={s.href}>
@@ -92,7 +92,7 @@ export function Footer() {
             <div className="mt-6">
               <Link
                 href="/book-consultation"
-                className="inline-block bg-brand-gold text-secondary px-6 py-3 rounded-md text-sm font-semibold hover:bg-brand-gold/90 transition-colors"
+                className="inline-block bg-brand-gold text-secondary px-6 py-3 rounded-md text-sm font-semibold hover:bg-brand-gold/90 active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-brand-gold/30"
               >
                 Book a Consultation
               </Link>

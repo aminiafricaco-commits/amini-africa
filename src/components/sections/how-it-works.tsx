@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, MessageSquare, ChevronRight, ClipboardCheck } from "lucide-react";
+import { Calendar, MessageSquare, ClipboardList, ClipboardCheck } from "lucide-react";
 
 const steps = [
   {
@@ -9,17 +9,17 @@ const steps = [
     number: "01",
     title: "Book a Consultation",
     description:
-      "Schedule a free consultation call to discuss your needs. We'll learn about your situation and explain how we can help.",
+      "Schedule a free consultation call to discuss your needs. We will learn about your situation and explain how we can help.",
   },
   {
     icon: MessageSquare,
     number: "02",
     title: "Discuss Requirements",
     description:
-      "We'll work with you to define scope, timelines, and deliverables. Get a clear plan and transparent pricing.",
+      "We will work with you to define scope, timelines, and deliverables. Get a clear plan and transparent pricing.",
   },
   {
-    icon: ChevronRight,
+    icon: ClipboardList,
     number: "03",
     title: "We Execute on the Ground",
     description:
@@ -45,7 +45,7 @@ export function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -64,13 +64,18 @@ export function HowItWorks() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="relative text-center"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-cream mb-6">
+              {/* Step connector line */}
+              {index < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-8 left-[60%] w-[80%] h-px bg-gradient-to-r from-brand-gold/30 to-transparent" />
+              )}
+
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-brand-cream to-brand-cream/60 border border-brand-gold/20 mb-6 relative">
                 <step.icon className="h-7 w-7 text-brand-gold" />
+                <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-brand-gold text-secondary text-[10px] font-bold flex items-center justify-center shadow-sm">
+                  {step.number}
+                </span>
               </div>
-              <span className="block text-5xl font-bold text-brand-gold/20 mb-2">
-                {step.number}
-              </span>
-              <h3 className="text-xl font-semibold text-secondary mb-3">
+              <h3 className="font-heading text-xl font-bold text-secondary mb-3">
                 {step.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">

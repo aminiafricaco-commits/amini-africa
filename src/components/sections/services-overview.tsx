@@ -60,7 +60,7 @@ export function ServicesOverview() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
             Our Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -80,18 +80,23 @@ export function ServicesOverview() {
             >
               <Link
                 href={service.href}
-                className="group block p-8 rounded-xl border border-border bg-white hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300 h-full"
+                className="group block p-8 rounded-xl border border-border bg-white hover:border-brand-gold/50 hover:shadow-xl transition-all duration-300 h-full relative overflow-hidden"
               >
-                <service.icon className="h-10 w-10 text-brand-gold mb-5" />
-                <h3 className="text-xl font-semibold text-secondary mb-3 group-hover:text-brand-gold transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  {service.description}
-                </p>
-                <span className="inline-flex items-center text-sm font-medium text-brand-gold group-hover:gap-2 transition-all">
-                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                </span>
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 mb-5 group-hover:from-brand-gold/20 group-hover:to-brand-cream transition-all duration-300">
+                    <service.icon className="h-7 w-7 text-brand-gold" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-brand-gold transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {service.description}
+                  </p>
+                  <span className="inline-flex items-center text-sm font-medium text-brand-gold group-hover:gap-3 transition-all duration-300">
+                    Learn More <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                </div>
               </Link>
             </motion.div>
           ))}

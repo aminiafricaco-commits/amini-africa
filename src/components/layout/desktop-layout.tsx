@@ -41,8 +41,8 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center gap-2 shrink-0">
-              <span className="text-2xl font-bold text-secondary tracking-tight">AMINI</span>
-              <span className="text-2xl font-light text-brand-gold">AFRICA</span>
+              <span className="text-2xl font-bold text-secondary tracking-tight font-heading">AMINI</span>
+              <span className="text-2xl font-light text-brand-gold font-heading">AFRICA</span>
             </Link>
 
             <nav className="flex items-center gap-8">
@@ -104,7 +104,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
                 >
                   WhatsApp
                 </Link>
-                <Button asChild size="lg" className="bg-brand-gold text-secondary font-semibold hover:bg-brand-gold/90 shadow-sm">
+                <Button asChild size="lg" variant="gold">
                   <Link href="/book-consultation">Book a Consultation</Link>
                 </Button>
               </div>

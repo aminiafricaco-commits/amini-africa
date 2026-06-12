@@ -20,6 +20,13 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(197,165,114,0.15),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(197,165,114,0.08),transparent_50%)]" />
 
+      {/* Gold accent bar */}
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-brand-gold/60 via-brand-gold to-brand-gold/60" />
+
+      {/* Decorative gold circles */}
+      <div className="absolute top-20 right-20 w-64 h-64 rounded-full border border-brand-gold/10 animate-float" />
+      <div className="absolute bottom-32 right-1/4 w-32 h-32 rounded-full border border-brand-gold/10 animate-float" style={{ animationDelay: "-3s" }} />
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
         <div className="max-w-4xl">
           <motion.p
@@ -35,7 +42,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           >
             Your Trusted
             <br />
@@ -59,12 +66,12 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
-            <Button asChild size="xl" className="bg-brand-gold text-secondary font-semibold hover:bg-brand-gold/90">
+            <Button asChild size="xl" variant="gold">
               <Link href="/book-consultation">
                 Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+            <Button asChild size="xl" variant="gold-outline" className="border-white/30 text-white hover:bg-white/10 hover:border-white/40 hover:shadow-white/10">
               <Link href="/services">
                 Explore Services
               </Link>
@@ -75,10 +82,13 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-3 gap-3"
+            className="grid grid-cols-2 md:grid-cols-3 gap-2.5"
           >
             {trustItems.map((item) => (
-              <div key={item} className="flex items-center gap-2 text-white/60 text-sm">
+              <div
+                key={item}
+                className="flex items-center gap-2 text-white/60 text-sm bg-white/5 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/5 hover:border-brand-gold/30 hover:bg-white/[0.07] transition-all duration-300"
+              >
                 <CheckCircle className="h-4 w-4 text-brand-gold shrink-0" />
                 <span>{item}</span>
               </div>
