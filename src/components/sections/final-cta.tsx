@@ -31,7 +31,7 @@ export function FinalCTA() {
             Ready to Get Started?
           </h2>
           <p className="text-lg md:text-xl text-secondary/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Book a free consultation today and discover how Amini Africa can be
+            Book a consultation today and discover how Amini Africa can be
             your trusted partner on the ground in Sub-Saharan Africa.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

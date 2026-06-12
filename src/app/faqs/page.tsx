@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "How does Amini Africa work?",
     answer:
-      "You book a free consultation, we discuss your requirements, our local team executes on the ground, and you receive regular updates and comprehensive reports. It is that simple.",
+      "You book a consultation, we discuss your requirements, our local team executes on the ground, and you receive regular updates and comprehensive reports. It is that simple.",
   },
   {
     question: "What countries do you operate in?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "How much do your services cost?",
     answer:
-      "Pricing depends on the scope and complexity of your requirements. We provide transparent quotes after an initial consultation. There are no hidden fees, and we will always confirm pricing before starting any work.",
+      "Our initial consultation is $50 (30 minutes). During this call we discuss your needs, answer your questions, and provide a transparent quote for any further services. There are no hidden fees, and we always confirm pricing before starting work.",
   },
   {
     question: "Can you verify a property for me before I buy?",
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "How do I contact Amini Africa?",
     answer:
-      "You can book a free consultation through our website, email us directly, or reach us on WhatsApp. We aim to respond to all inquiries within 24 hours.",
+      "You can book a consultation through our website, email us directly, or reach us on WhatsApp. We aim to respond to all inquiries within 24 hours.",
   },
   {
     question: "Do you offer ongoing support for existing clients?",
@@ -66,7 +66,7 @@ const faqs = [
   {
     question: "How do I pay for services?",
     answer:
-      "We accept international bank transfers and provide detailed invoices for all services. Payment terms are agreed upon before work begins.",
+      "The initial consultation fee is $50 (paid via credit/debit card or mobile money). For ongoing services, we accept international bank transfers, card payments, and mobile money. Payment terms are agreed upon before work begins.",
   },
 ];
 

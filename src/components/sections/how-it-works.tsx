@@ -9,7 +9,7 @@ const steps = [
     number: "01",
     title: "Book a Consultation",
     description:
-      "Schedule a free consultation call to discuss your needs. We will learn about your situation and explain how we can help.",
+      "Schedule a consultation call to discuss your needs. We will learn about your situation and explain how we can help.",
   },
   {
     icon: MessageSquare,
