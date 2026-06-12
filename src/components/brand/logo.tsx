@@ -4,21 +4,27 @@ type LogoProps = {
   size?: "sm" | "md" | "lg";
 };
 
-type SizeConfig = { h: number; fs: number; dot: number };
+const ratio = 1.4;
 
-const sizes: Record<string, SizeConfig> = {
-  sm: { h: 36, fs: 20, dot: 7 },
-  md: { h: 52, fs: 30, dot: 10 },
-  lg: { h: 64, fs: 38, dot: 13 },
+const sizes = {
+  sm: { h: Math.round(40 * ratio), fs: Math.round(22 * ratio), gap: 6, dot: 8 },
+  md: { h: Math.round(60 * ratio), fs: Math.round(34 * ratio), gap: 8, dot: 12 },
+  lg: { h: Math.round(76 * ratio), fs: Math.round(44 * ratio), gap: 10, dot: 16 },
 };
 
-function LogoMark({ s, primary, gold, className }: { s: SizeConfig; primary: string; gold: string; className?: string }) {
-  const baseline = s.h / 2 + s.fs * 0.35;
-  const aminiW = s.fs * 3.4;
-  const dotGap = s.fs * 0.4;
-  const dotX = aminiW + dotGap;
-  const africaX = dotX + s.dot + dotGap;
-  const totalW = africaX + s.fs * 3.8;
+export function Logo({ className = "", variant = "dark", size = "md" }: LogoProps) {
+  const s = sizes[size];
+  const primary = variant === "dark" ? "#0A1628" : "#FFFFFF";
+  const gold = "#C5A572";
+  const baseline = s.h / 2 + s.fs * 0.36;
+  const ch = Math.round(s.fs * 0.62);
+  const aminiChars = 5;
+  const africaChars = 6;
+  const aminiW = Math.round(ch * aminiChars);
+  const africaW = Math.round(ch * africaChars);
+  const dotX = aminiW + s.gap;
+  const africaX = dotX + s.dot + s.gap;
+  const totalW = africaX + africaW;
 
   return (
     <svg
@@ -37,7 +43,7 @@ function LogoMark({ s, primary, gold, className }: { s: SizeConfig; primary: str
         fontSize={s.fs}
         fontWeight="700"
         fill={primary}
-        letterSpacing="-0.01em"
+        style={{ letterSpacing: "-0.03em" }}
       >
         Amini
       </text>
@@ -57,18 +63,10 @@ function LogoMark({ s, primary, gold, className }: { s: SizeConfig; primary: str
         fontSize={s.fs}
         fontWeight="400"
         fill={gold}
-        letterSpacing="0.02em"
+        style={{ letterSpacing: "-0.01em" }}
       >
         Africa
       </text>
     </svg>
   );
-}
-
-export function Logo({ className = "", variant = "dark", size = "md" }: LogoProps) {
-  const s = sizes[size];
-  const primary = variant === "dark" ? "#0A1628" : "#FFFFFF";
-  const gold = "#C5A572";
-
-  return <LogoMark s={s} primary={primary} gold={gold} className={className} />;
 }
