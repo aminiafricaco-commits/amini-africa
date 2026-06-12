@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/brand/logo";
 
 const services = [
   { label: "Concierge Services", href: "/services/concierge" },
@@ -42,7 +42,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center shrink-0">
-              <Image src="/images/logo.png" alt="Amini Africa" width={160} height={45} className="h-9 w-auto" priority />
+              <Logo size="md" variant="dark" />
             </Link>
 
             <nav className="flex items-center gap-8">

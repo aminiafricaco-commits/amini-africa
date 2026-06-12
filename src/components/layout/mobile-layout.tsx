@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Home, Phone, Calendar, MessageCircle, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Logo } from "@/components/brand/logo";
 
 const services = [
   { label: "Concierge Services", href: "/services/concierge" },
@@ -34,7 +34,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
         <div className="flex items-center justify-between px-4 h-14">
           <Link href="/" className="flex items-center">
-            <Image src="/images/logo.png" alt="Amini Africa" width={140} height={38} className="h-8 w-auto" priority />
+            <Logo size="sm" variant="dark" />
           </Link>
           <div className="flex items-center gap-2">
             <Link

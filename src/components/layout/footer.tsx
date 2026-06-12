@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { Logo } from "@/components/brand/logo";
 
 const services = [
   { label: "Concierge Services", href: "/services/concierge" },
@@ -32,7 +32,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link href="/" className="inline-flex items-center mb-4">
-              <Image src="/images/logo.png" alt="Amini Africa" width={160} height={45} className="h-10 w-auto" />
+              <Logo size="md" variant="light" />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               Your Trusted Sub-Saharan Partner for representation, verification,
