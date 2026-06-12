@@ -7,8 +7,16 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section className="py-24 bg-gradient-to-br from-brand-gold via-brand-gold to-yellow-600 relative overflow-hidden">
+    <section className="relative py-24 overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/business-meeting.jpg')" }}
+      />
+      {/* Gold gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/90 via-brand-gold/85 to-yellow-600/90" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.15),transparent_60%)]" />
+
       <div className="absolute top-10 left-10 w-48 h-48 rounded-full border border-white/10 animate-float" />
       <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full border border-white/10 animate-float" style={{ animationDelay: "-4s" }} />
 

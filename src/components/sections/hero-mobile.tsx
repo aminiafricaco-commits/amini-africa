@@ -15,7 +15,14 @@ const trustItems = [
 
 export function MobileHero() {
   return (
-    <section className="relative min-h-[90svh] flex items-center bg-gradient-to-b from-secondary via-secondary to-secondary/95 overflow-hidden">
+    <section className="relative min-h-[90svh] flex items-center overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+      />
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/95 via-secondary/90 to-secondary/95" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.12),transparent_60%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
 
@@ -85,7 +92,7 @@ export function MobileHero() {
           {trustItems.map((item) => (
             <div
               key={item}
-              className="flex items-center gap-2 text-white/50 text-xs bg-white/5 rounded-lg px-2.5 py-2 border border-white/5"
+              className="flex items-center gap-2 text-white/50 text-xs bg-white/5 backdrop-blur-sm rounded-lg px-2.5 py-2 border border-white/5"
             >
               <CheckCircle className="h-3.5 w-3.5 text-brand-gold shrink-0" />
               <span>{item}</span>
