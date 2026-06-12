@@ -43,9 +43,9 @@ export function MobileHero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-heading font-bold text-white leading-tight mb-4"
         >
-          <span className="text-3xl sm:text-4xl block">Your Eyes & Ears</span>
+          <span className="text-3xl sm:text-4xl block">Your Trusted</span>
           <span className="text-2xl sm:text-3xl text-brand-gold block mt-1">
-            On the Ground in Africa
+            Sub-Saharan Partner
           </span>
         </motion.h1>
 
