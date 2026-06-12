@@ -14,7 +14,9 @@ const metrics = [
 
 export function MobileHero() {
   return (
-    <section className="relative min-h-[90svh] flex items-center overflow-hidden bg-gradient-to-b from-muted to-white">
+    <section className="relative min-h-[90svh] flex items-center overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/images/hero-2.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
       <div className="relative w-full px-4 py-16 mt-6">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -32,7 +34,7 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-heading font-bold text-foreground leading-tight mb-4"
+          className="font-heading font-bold text-white leading-tight mb-4"
         >
           <span className="text-3xl sm:text-4xl block">Your Trusted</span>
           <span className="text-2xl sm:text-3xl text-brand-gold block mt-1">
@@ -44,7 +46,7 @@ export function MobileHero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-sm sm:text-base text-foreground/90 leading-relaxed mb-8"
+          className="text-sm sm:text-base text-white/80 leading-relaxed mb-8"
         >
           Trusted local representation, property verification, procurement, and
           business support for diaspora Africans across Sub-Saharan Africa.
@@ -65,7 +67,7 @@ export function MobileHero() {
           <Link
             href="https://wa.me/254743634581"
             target="_blank"
-            className="flex items-center justify-center gap-2 w-full border-2 border-border text-foreground py-4 rounded-xl font-medium text-base active:scale-[0.97] transition-all duration-150 hover:bg-muted"
+            className="flex items-center justify-center gap-2 w-full border-2 border-white/30 text-white/90 py-4 rounded-xl font-medium text-base active:scale-[0.97] transition-all duration-150 hover:bg-white/10"
           >
             <MessageCircle className="h-5 w-5" />
             Chat on WhatsApp
@@ -81,16 +83,16 @@ export function MobileHero() {
           {metrics.map((m) => (
             <div
               key={m.label}
-              className="flex items-center gap-2 bg-white rounded-xl px-3 py-2.5 border border-border"
+              className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2.5 border border-white/10"
             >
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-brand-gold/10 shrink-0">
                 <m.icon className="h-4 w-4 text-brand-gold" />
               </div>
               <div>
-                <p className="text-foreground font-bold text-sm leading-none mb-0.5 font-heading">
+                <p className="text-white font-bold text-sm leading-none mb-0.5 font-heading">
                   <AnimatedCounter value={m.value} suffix={m.suffix} />
                 </p>
-                <p className="text-muted-foreground text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
+                <p className="text-white/60 text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
               </div>
             </div>
           ))}

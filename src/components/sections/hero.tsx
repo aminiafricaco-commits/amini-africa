@@ -15,8 +15,9 @@ const metrics = [
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-muted to-white">
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(107,114,128,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(107,114,128,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/images/hero-1.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
 
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
         <div className="max-w-4xl">
@@ -36,7 +37,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-heading font-bold text-foreground leading-[1.05] mb-6"
+            className="font-heading font-bold text-white leading-[1.05] mb-6"
           >
             <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight">
               Your Trusted
@@ -50,7 +51,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/90 max-w-2xl mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed"
           >
             Trusted local representation, property verification, procurement, and
             business support for diaspora Africans, investors, and organizations

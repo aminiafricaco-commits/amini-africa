@@ -58,21 +58,27 @@ export default function AboutPage() {
 
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Too many people have been burned by unverified contacts, fraudulent
-              schemes, and unreliable partners. Too many opportunities have been
-              lost because there was no one trustworthy to represent your interests.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              We exist to change that. We are your eyes, ears, and hands on the
-              ground. We verify, we inspect, we represent, we execute, and we
-              report back with complete transparency.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Every engagement is built on a foundation of trust, professionalism,
-              and an unwavering commitment to our clients interests.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+            <div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Too many people have been burned by unverified contacts, fraudulent
+                schemes, and unreliable partners. Too many opportunities have been
+                lost because there was no one trustworthy to represent your interests.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                We exist to change that. We are your eyes, ears, and hands on the
+                ground. We verify, we inspect, we represent, we execute, and we
+                report back with complete transparency.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Every engagement is built on a foundation of trust, professionalism,
+                and an unwavering commitment to our clients interests.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden min-h-[320px]">
+              <div className="absolute inset-0 bg-[url('/images/business-meeting.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+            </div>
           </div>
 
           <div className="mb-16">

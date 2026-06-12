@@ -86,33 +86,42 @@ export function ServicesOverview() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Link
-            href={featured.href}
-            className="group block relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-white via-white to-white/50 p-8 md:p-12 mb-8 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"
-          >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
-            <div className="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
-              <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-white border border-primary/20 shadow-sm shrink-0 group-hover:scale-110 group-hover:border-primary/40 transition-all duration-500">
-                <featured.icon className="h-10 w-10 text-primary" />
-              </div>
-              <div className="flex-1">
-                <div className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-3 py-0.5 mb-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  <span className="text-primary text-xs font-medium tracking-wide uppercase">Most Requested</span>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-8">
+            <Link
+              href={featured.href}
+              className="group block relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-white via-white to-white/50 p-8 md:p-12 lg:col-span-3 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+              <div className="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
+                <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-white border border-primary/20 shadow-sm shrink-0 group-hover:scale-110 group-hover:border-primary/40 transition-all duration-500">
+                  <featured.icon className="h-10 w-10 text-primary" />
                 </div>
-                <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-500">
-                  {featured.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed max-w-2xl mb-4">
-                  {featured.description}
-                </p>
-                <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:gap-3 transition-all duration-300">
-                  Learn More <ArrowRight className="ml-1 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
-                </span>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-3 py-0.5 mb-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    <span className="text-primary text-xs font-medium tracking-wide uppercase">Most Requested</span>
+                  </div>
+                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-500">
+                    {featured.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed max-w-2xl mb-4">
+                    {featured.description}
+                  </p>
+                  <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:gap-3 transition-all duration-300">
+                    Learn More <ArrowRight className="ml-1 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+            <div className="lg:col-span-2 relative rounded-2xl overflow-hidden min-h-[280px] lg:min-h-full">
+              <div className="absolute inset-0 bg-[url('/images/business-handshake.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <span className="text-white/90 text-sm font-medium">Nairobi, Kenya</span>
               </div>
             </div>
-          </Link>
+          </div>
         </motion.div>
 
         {/* Secondary services — compact 2x2 grid */}
