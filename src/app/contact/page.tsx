@@ -43,18 +43,18 @@ export default function ContactPage() {
   return (
     <div className="relative">
       <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-4 py-1.5 mb-5">
-              <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
-              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Contact</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
+              <Sparkles className="h-3.5 w-3.5 text-primary" />
+              <span className="text-primary font-medium text-xs tracking-widest uppercase">Contact</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Get in Touch
             </h1>
-            <div className="w-16 h-0.5 bg-brand-gold mb-6 rounded-full" />
+            <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
               We would love to hear from you. Whether you have a question about
               our services, need a quote, or want to discuss a specific project,
@@ -73,14 +73,14 @@ export default function ContactPage() {
               </h2>
               <div className="space-y-5">
                 {channels.map((ch) => (
-                  <div key={ch.title} className="flex items-start gap-4 bg-brand-cream/40 rounded-xl p-5 border border-brand-gold/5">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white border border-brand-gold/20 shrink-0">
-                      <ch.icon className="h-6 w-6 text-brand-gold" />
+                  <div key={ch.title} className="flex items-start gap-4 bg-white rounded-xl p-5 border border-border">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white border border-primary/20 shrink-0">
+                      <ch.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-secondary mb-0.5">{ch.title}</h3>
                       {ch.href ? (
-                        <Link href={ch.href} target={ch.href.startsWith("http") ? "_blank" : undefined} className="text-brand-gold font-medium hover:underline text-sm">
+                        <Link href={ch.href} target={ch.href.startsWith("http") ? "_blank" : undefined} className="text-primary font-medium hover:underline text-sm">
                           {ch.value} {ch.href.startsWith("http") && <ExternalLink className="h-3 w-3 inline" />}
                         </Link>
                       ) : (
@@ -95,19 +95,19 @@ export default function ContactPage() {
               <div className="mt-8">
                 <Link
                   href="/book-consultation"
-                  className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
                 >
                   Book a Consultation <ArrowRight className="h-5 w-5" />
                 </Link>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-brand-cream/60 to-brand-cream/20 rounded-2xl p-8 lg:p-10 border border-brand-gold/10">
+            <div className="bg-gradient-to-br from-white/60 to-white/20 rounded-2xl p-8 lg:p-10 border border-primary/10">
               <h2 className="font-heading text-2xl font-bold text-secondary mb-6">
                 Send Us a Message
               </h2>
               <div className="bg-white rounded-xl p-8 border border-border text-center">
-                <Mail className="h-16 w-16 text-brand-gold mx-auto mb-4" />
+                <Mail className="h-16 w-16 text-primary mx-auto mb-4" />
                 <h3 className="font-heading font-bold text-secondary text-lg mb-2">
                   Contact Form
                 </h3>
@@ -118,14 +118,14 @@ export default function ContactPage() {
                 <Link
                   href="https://tally.so/r/Gx7eZp"
                   target="_blank"
-                  className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
                 >
                   Open Contact Form <ExternalLink className="h-4 w-4" />
                 </Link>
               </div>
               <p className="text-xs text-muted-foreground text-center mt-4">
                 Prefer to email directly? Write to{" "}
-                <Link href="mailto:aminiafrica.co@gmail.com" className="text-brand-gold hover:underline">
+                <Link href="mailto:aminiafrica.co@gmail.com" className="text-primary hover:underline">
                   aminiafrica.co@gmail.com
                 </Link>
               </p>
@@ -135,7 +135,7 @@ export default function ContactPage() {
       </section>
 
       <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.08),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Ready to Get Started?
@@ -146,7 +146,7 @@ export default function ContactPage() {
           </p>
           <Link
             href="/book-consultation"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
           >
             Book Your Consultation <ArrowRight className="h-5 w-5" />
           </Link>

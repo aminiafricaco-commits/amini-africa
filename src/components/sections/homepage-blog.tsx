@@ -30,8 +30,8 @@ const posts = [
 
 export function HomepageBlog() {
   return (
-    <section className="py-20 md:py-24 bg-brand-cream/60 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(200,147,42,0.05),transparent_50%)]" />
+    <section className="py-20 md:py-24 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(10,22,40,0.05),transparent_50%)]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,14 +40,14 @@ export function HomepageBlog() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
-            <BookOpen className="h-3.5 w-3.5 text-brand-gold" />
-            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Insights</span>
+          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
+            <BookOpen className="h-3.5 w-3.5 text-primary" />
+            <span className="text-primary font-medium text-xs tracking-widest uppercase">Insights</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
             Latest Insights
           </h2>
-          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Practical advice and insights for diaspora Africans, investors, and
             professionals engaging with Africa.
@@ -65,14 +65,14 @@ export function HomepageBlog() {
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className="group block bg-white rounded-xl border border-border p-6 hover:border-brand-gold/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 h-full"
+                className="group block bg-white rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 h-full"
               >
-                <div className="inline-flex items-center gap-1.5 bg-brand-gold/10 rounded-full px-3 py-1 mb-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-gold" />
-                  <span className="text-brand-gold text-xs font-medium">{post.category}</span>
+                <div className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-3 py-1 mb-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <span className="text-primary text-xs font-medium">{post.category}</span>
                 </div>
                 <p className="text-xs text-muted-foreground mb-2">{post.date}</p>
-                <h3 className="font-heading font-bold text-secondary text-base mb-2 group-hover:text-brand-gold transition-colors duration-300">
+                <h3 className="font-heading font-bold text-secondary text-base mb-2 group-hover:text-primary transition-colors duration-300">
                   {post.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
@@ -91,7 +91,7 @@ export function HomepageBlog() {
         >
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-brand-gold font-semibold hover:gap-3 transition-all duration-300"
+            className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all duration-300"
           >
             View All Articles <ArrowRight className="h-4 w-4" />
           </Link>

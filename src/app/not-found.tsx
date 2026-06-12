@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-secondary text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.08),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(10,22,40,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
       <div className="relative text-center px-4">
-        <span className="font-heading text-[10rem] md:text-[14rem] font-bold text-brand-gold/10 leading-none select-none block mb-[-2rem]">
+        <span className="font-heading text-[10rem] md:text-[14rem] font-bold text-primary/10 leading-none select-none block mb-[-2rem]">
           404
         </span>
         <h1 className="font-heading text-3xl md:text-5xl font-bold mb-4 relative">
           Page Not Found
         </h1>
-        <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-6 rounded-full" />
+        <div className="w-16 h-0.5 bg-primary mx-auto mb-6 rounded-full" />
         <p className="text-white/60 max-w-md mx-auto mb-10">
           The page you are looking for does not exist or has been moved.
           Let us help you find what you need.
@@ -26,7 +26,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
           >
             <Home className="h-5 w-5" />
             Go Home

@@ -35,18 +35,18 @@ export default function AboutPage() {
   return (
     <div className="relative">
       <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-4 py-1.5 mb-5">
-              <Heart className="h-3.5 w-3.5 text-brand-gold" />
-              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">About Us</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
+              <Heart className="h-3.5 w-3.5 text-primary" />
+              <span className="text-primary font-medium text-xs tracking-widest uppercase">About Us</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               About Amini Africa
             </h1>
-            <div className="w-16 h-0.5 bg-brand-gold mb-6 rounded-full" />
+            <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
               We exist to solve a critical problem: diaspora Africans, international
               investors, and global professionals need trusted, accountable people
@@ -81,9 +81,9 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {values.map((v) => (
-                <div key={v.title} className="bg-white rounded-2xl border border-border p-8 text-center hover:border-brand-gold/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 mx-auto mb-5">
-                    <v.icon className="h-7 w-7 text-brand-gold" />
+                <div key={v.title} className="bg-white rounded-2xl border border-border p-8 text-center hover:border-primary/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mx-auto mb-5">
+                    <v.icon className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="font-heading font-bold text-secondary text-lg mb-3">{v.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{v.body}</p>
@@ -95,7 +95,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.08),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Ready to Work with Us?
@@ -106,7 +106,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/book-consultation"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
           >
             Book a Consultation <ArrowRight className="h-5 w-5" />
           </Link>

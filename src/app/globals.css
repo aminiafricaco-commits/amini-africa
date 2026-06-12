@@ -7,23 +7,23 @@
 @layer base {
   :root {
     --radius: 0.5rem;
-    --background: 248 250 252;
+    --background: 255 255 255;
     --foreground: 10 22 40;
     --card: 255 255 255;
     --card-foreground: 10 22 40;
-    --primary: 200 147 42;
-    --primary-foreground: 10 22 40;
+    --primary: 10 22 40;
+    --primary-foreground: 255 255 255;
     --secondary: 10 22 40;
-    --secondary-foreground: 200 147 42;
-    --muted: 247 243 238;
-    --muted-foreground: 100 116 139;
-    --accent: 200 147 42;
-    --accent-foreground: 10 22 40;
+    --secondary-foreground: 255 255 255;
+    --muted: 248 249 250;
+    --muted-foreground: 108 117 125;
+    --accent: 10 22 40;
+    --accent-foreground: 255 255 255;
     --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
-    --border: 220 215 205;
-    --input: 220 215 205;
-    --ring: 200 147 42;
+    --destructive-foreground: 255 255 255;
+    --border: 222 226 230;
+    --input: 222 226 230;
+    --ring: 10 22 40;
   }
 }
 

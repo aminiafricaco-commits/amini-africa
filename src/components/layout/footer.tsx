@@ -44,7 +44,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-heading font-semibold text-brand-gold mb-4">Services</h4>
+            <h4 className="font-heading font-semibold text-white/80 mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((s) => (
                 <li key={s.href}>
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-brand-gold mb-4">Company</h4>
+            <h4 className="font-semibold text-white/80 mb-4">Company</h4>
             <ul className="space-y-2">
               {company.map((c) => (
                 <li key={c.href}>
@@ -76,7 +76,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-brand-gold mb-4">Resources</h4>
+            <h4 className="font-semibold text-white/80 mb-4">Resources</h4>
             <ul className="space-y-2">
               {resources.map((r) => (
                 <li key={r.href}>
@@ -92,7 +92,7 @@ export function Footer() {
             <div className="mt-6">
               <Link
                 href="/book-consultation"
-                className="inline-block bg-brand-gold text-secondary px-6 py-3 rounded-md text-sm font-semibold hover:bg-brand-gold/90 active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-brand-gold/30"
+                className="inline-block bg-white text-secondary px-6 py-3 rounded-md text-sm font-semibold hover:bg-white/90 active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-white/30"
               >
                 Book a Consultation
               </Link>

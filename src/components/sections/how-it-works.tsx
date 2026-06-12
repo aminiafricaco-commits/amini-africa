@@ -32,8 +32,8 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-20 md:py-24 bg-brand-warm relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.03),transparent_50%)]" />
+    <section className="py-20 md:py-24 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.03),transparent_50%)]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,14 +42,14 @@ export function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
-            <Layers className="h-3.5 w-3.5 text-brand-gold" />
-            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Process</span>
+          <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
+            <Layers className="h-3.5 w-3.5 text-primary" />
+            <span className="text-primary font-medium text-xs tracking-widest uppercase">Process</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
             How It Works
           </h2>
-          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Getting started is simple. Here is how we deliver results for our clients.
           </p>
@@ -57,7 +57,7 @@ export function HowItWorks() {
 
         <div className="relative">
           {/* Timeline line — desktop */}
-          <div className="hidden lg:block absolute top-24 left-[calc(12.5%+2rem)] right-[calc(12.5%+2rem)] h-px bg-gradient-to-r from-brand-gold/10 via-brand-gold/40 to-brand-gold/10" />
+          <div className="hidden lg:block absolute top-24 left-[calc(12.5%+2rem)] right-[calc(12.5%+2rem)] h-px bg-gradient-to-r from-primary/10 via-primary/40 to-primary/10" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {steps.map((step, index) => (
@@ -71,20 +71,20 @@ export function HowItWorks() {
               >
                 {/* Desktop connector */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-brand-gold/30 to-transparent" />
+                  <div className="hidden lg:block absolute top-12 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-primary/30 to-transparent" />
                 )}
 
                 {/* Number circle */}
-                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-brand-cream to-brand-cream/60 border-2 border-brand-gold/20 mb-6 relative mx-auto lg:mx-0 group-hover:border-brand-gold/40 transition-colors">
-                  <step.icon className="h-8 w-8 text-brand-gold" />
-                  <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-brand-gold text-secondary text-xs font-bold flex items-center justify-center shadow-md ring-2 ring-white">
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-white to-white/60 border-2 border-primary/20 mb-6 relative mx-auto lg:mx-0 group-hover:border-primary/40 transition-colors">
+                  <step.icon className="h-8 w-8 text-primary" />
+                  <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center shadow-md ring-2 ring-white">
                     {step.number}
                   </span>
                 </div>
 
                 {/* Mobile connector */}
                 {index < steps.length - 1 && (
-                  <div className="lg:hidden w-px h-8 bg-gradient-to-b from-brand-gold/30 to-transparent mx-auto my-2" />
+                  <div className="lg:hidden w-px h-8 bg-gradient-to-b from-primary/30 to-transparent mx-auto my-2" />
                 )}
 
                 <h3 className="font-heading text-xl font-bold text-secondary mb-3">

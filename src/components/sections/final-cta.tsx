@@ -18,7 +18,7 @@ export function FinalCTA() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/business-meeting.jpg')" }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/95 via-brand-gold/85 to-amber-700/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/95 via-secondary/85 to-secondary/95" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.12),transparent_60%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
 

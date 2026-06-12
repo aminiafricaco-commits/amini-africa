@@ -49,7 +49,7 @@ export function Navbar() {
             <span className="text-2xl font-bold text-secondary">
               AMINI
             </span>
-            <span className="text-2xl font-light text-brand-gold">
+            <span className="text-2xl font-light text-primary">
               AFRICA
             </span>
           </Link>

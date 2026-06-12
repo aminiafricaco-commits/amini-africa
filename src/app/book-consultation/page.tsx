@@ -24,9 +24,9 @@ function StepIndicator({ current }: { current: number }) {
             <div
               className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
                 s.num < current
-                  ? "bg-brand-gold text-secondary"
+                  ? "bg-primary text-primary-foreground"
                   : s.num === current
-                  ? "bg-brand-gold text-secondary ring-4 ring-brand-gold/20"
+                  ? "bg-primary text-primary-foreground ring-4 ring-primary/20"
                   : "bg-gray-100 text-gray-400"
               }`}
             >
@@ -47,7 +47,7 @@ function StepIndicator({ current }: { current: number }) {
           {i < steps.length - 1 && (
             <div
               className={`w-16 sm:w-24 h-0.5 mx-2 sm:mx-4 transition-colors duration-300 ${
-                s.num < current ? "bg-brand-gold" : "bg-gray-200"
+                s.num < current ? "bg-primary" : "bg-gray-200"
               }`}
             />
           )}
@@ -102,18 +102,18 @@ function BookingContent() {
       />
 
       <div className="min-h-screen bg-background pt-28 pb-24 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.05),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(200,147,42,0.03),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.05),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(10,22,40,0.03),transparent_50%)]" />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
-              <Calendar className="h-3.5 w-3.5 text-brand-gold" />
-              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Get Started</span>
+            <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
+              <Calendar className="h-3.5 w-3.5 text-primary" />
+              <span className="text-primary font-medium text-xs tracking-widest uppercase">Get Started</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-3">
               Book a Consultation
             </h1>
-            <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
+            <div className="w-16 h-0.5 bg-primary mx-auto mb-4 rounded-full" />
             <p className="text-muted-foreground max-w-lg mx-auto">
               Complete all three steps below. Each step unlocks the next automatically.
             </p>
@@ -125,7 +125,7 @@ function BookingContent() {
           <div
             className={`rounded-xl border p-8 mb-6 transition-all duration-500 ${
               step === 1
-                ? "border-brand-gold bg-white shadow-lg"
+                ? "border-primary bg-white shadow-lg"
                 : step > 1
                 ? "border-green-200 bg-green-50"
                 : "border-border bg-white"
@@ -136,7 +136,7 @@ function BookingContent() {
                 className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
                   step > 1
                     ? "bg-green-500 text-white"
-                    : "bg-brand-cream text-brand-gold"
+                    : "bg-white text-primary"
                 }`}
               >
                 {step > 1 ? (
@@ -156,7 +156,7 @@ function BookingContent() {
                   <Link
                     href={TALLY_FORM_URL}
                     target="_blank"
-                    className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-6 py-3 rounded-lg font-semibold text-sm hover:bg-brand-gold/90 active:scale-[0.97] transition-all duration-150"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:bg-primary/90 active:scale-[0.97] transition-all duration-150"
                   >
                     Open Questionnaire <ExternalLink className="h-4 w-4" />
                   </Link>
@@ -175,7 +175,7 @@ function BookingContent() {
           <div
             className={`rounded-xl border p-8 mb-6 transition-all duration-500 ${
               step === 2
-                ? "border-brand-gold bg-white shadow-lg"
+                ? "border-primary bg-white shadow-lg"
                 : step > 2
                 ? "border-green-200 bg-green-50"
                 : "border-border bg-white opacity-40 pointer-events-none"
@@ -186,7 +186,7 @@ function BookingContent() {
                 className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
                   step > 2
                     ? "bg-green-500 text-white"
-                    : "bg-brand-cream text-brand-gold"
+                    : "bg-white text-primary"
                 }`}
               >
                 {step > 2 ? (
@@ -231,13 +231,13 @@ function BookingContent() {
           <div
             className={`rounded-xl border p-8 mb-6 transition-all duration-500 ${
               step >= 3 && scheduled
-                ? "border-brand-gold bg-white shadow-lg ring-1 ring-brand-gold/20"
+                ? "border-primary bg-white shadow-lg ring-1 ring-primary/20"
                 : "border-border bg-white opacity-40 pointer-events-none"
             }`}
           >
             <div className="flex items-start gap-4">
               <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
-                step >= 3 && scheduled ? "bg-brand-cream text-brand-gold" : "bg-gray-100 text-gray-400"
+                step >= 3 && scheduled ? "bg-white text-primary" : "bg-gray-100 text-gray-400"
               }`}>
                 <CreditCard className="h-5 w-5" />
               </div>
@@ -273,7 +273,7 @@ function BookingContent() {
             <div className="text-center mt-4">
               <button
                 onClick={() => { setScheduled(true); setStep(3); }}
-                className="text-sm text-brand-gold hover:underline font-medium"
+                className="text-sm text-primary hover:underline font-medium"
               >
                 I&apos;ve already scheduled &mdash; continue to payment &rarr;
               </button>
@@ -282,17 +282,17 @@ function BookingContent() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 mt-10 pt-8 border-t border-border">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Shield className="h-4 w-4 text-brand-gold" />
+              <Shield className="h-4 w-4 text-primary" />
               <span>Secure & encrypted</span>
             </div>
             <div className="w-px h-4 bg-border" />
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <CreditCard className="h-4 w-4 text-brand-gold" />
+              <CreditCard className="h-4 w-4 text-primary" />
               <span>Pay $50 via Paystack</span>
             </div>
             <div className="w-px h-4 bg-border" />
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Calendar className="h-4 w-4 text-brand-gold" />
+              <Calendar className="h-4 w-4 text-primary" />
               <span>30-min video call</span>
             </div>
           </div>
@@ -303,14 +303,14 @@ function BookingContent() {
               <Link
                 href="https://wa.me/254743634581"
                 target="_blank"
-                className="text-brand-gold font-medium hover:underline"
+                className="text-primary font-medium hover:underline"
               >
                 Chat on WhatsApp
               </Link>{" "}
               or email{" "}
               <Link
                 href="mailto:aminiafrica.co@gmail.com"
-                className="text-brand-gold font-medium hover:underline"
+                className="text-primary font-medium hover:underline"
               >
                 aminiafrica.co@gmail.com
               </Link>

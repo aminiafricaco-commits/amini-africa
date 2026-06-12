@@ -42,22 +42,22 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group border border-border rounded-xl p-6 hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300"
+                className="group border border-border rounded-xl p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                   <Calendar className="h-4 w-4" />
                   <span>{post.date}</span>
-                  <span className="text-brand-gold font-medium">
+                  <span className="text-primary font-medium">
                     {post.category}
                   </span>
                 </div>
-                <h2 className="text-xl font-semibold text-secondary mb-3 group-hover:text-brand-gold transition-colors">
+                <h2 className="text-xl font-semibold text-secondary mb-3 group-hover:text-primary transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {post.description}
                 </p>
-                <span className="inline-flex items-center text-sm font-medium text-brand-gold">
+                <span className="inline-flex items-center text-sm font-medium text-primary">
                   Read More <ArrowRight className="ml-1 h-4 w-4" />
                 </span>
               </Link>

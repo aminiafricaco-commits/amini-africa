@@ -43,7 +43,7 @@ export default function BlogPostPage({ params }: Props) {
           <span className="flex items-center gap-1">
             <User className="h-4 w-4" /> {post.author}
           </span>
-          <span className="text-brand-gold font-medium">{post.category}</span>
+          <span className="text-primary font-medium">{post.category}</span>
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
@@ -98,7 +98,7 @@ export default function BlogPostPage({ params }: Props) {
         <div className="mt-12 pt-8 border-t border-border">
           <Link
             href="/book-consultation"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-6 py-3 rounded-md font-semibold hover:bg-brand-gold/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary/90 transition-colors"
           >
             Book a Consultation
           </Link>

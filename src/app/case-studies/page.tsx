@@ -41,12 +41,12 @@ export default function CaseStudiesPage() {
               <Link
                 key={study.slug}
                 href={`/case-studies/${study.slug}`}
-                className="group border border-border rounded-xl p-8 hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300"
+                className="group border border-border rounded-xl p-8 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
               >
-                <div className="flex items-center gap-2 text-sm text-brand-gold font-medium mb-3">
+                <div className="flex items-center gap-2 text-sm text-primary font-medium mb-3">
                   {study.service}
                 </div>
-                <h2 className="text-xl font-semibold text-secondary mb-3 group-hover:text-brand-gold transition-colors">
+                <h2 className="text-xl font-semibold text-secondary mb-3 group-hover:text-primary transition-colors">
                   {study.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
@@ -56,7 +56,7 @@ export default function CaseStudiesPage() {
                   <span className="text-sm text-muted-foreground">
                     Client: {study.client}
                   </span>
-                  <span className="inline-flex items-center text-sm font-medium text-brand-gold">
+                  <span className="inline-flex items-center text-sm font-medium text-primary">
                     Read Case Study <ArrowRight className="ml-1 h-4 w-4" />
                   </span>
                 </div>

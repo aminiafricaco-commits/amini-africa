@@ -37,7 +37,7 @@ export default function CaseStudyPage({ params }: Props) {
         </Link>
 
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-          <span className="text-brand-gold font-medium">{study.service}</span>
+          <span className="text-primary font-medium">{study.service}</span>
           <span>Client: {study.client}</span>
           <span>{study.date}</span>
         </div>
@@ -88,7 +88,7 @@ export default function CaseStudyPage({ params }: Props) {
         <div className="mt-12 pt-8 border-t border-border">
           <Link
             href="/book-consultation"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-6 py-3 rounded-md font-semibold hover:bg-brand-gold/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary/90 transition-colors"
           >
             Book a Consultation
           </Link>

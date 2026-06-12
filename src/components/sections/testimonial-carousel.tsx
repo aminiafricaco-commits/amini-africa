@@ -76,8 +76,8 @@ export function TestimonialCarousel() {
 
   return (
     <section className="py-20 md:py-28 bg-brand-navy-light text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(200,147,42,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.08),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(10,22,40,0.05),transparent_50%)]" />
       <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-white/5 animate-float" />
       <div className="absolute bottom-20 right-20 w-32 h-32 rounded-full border border-white/5 animate-float" style={{ animationDelay: "-3s" }} />
 
@@ -89,14 +89,14 @@ export function TestimonialCarousel() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-4 py-1.5 mb-4">
-            <MessageCircle className="h-3.5 w-3.5 text-brand-gold" />
-            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Testimonials</span>
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-4">
+            <MessageCircle className="h-3.5 w-3.5 text-white/80" />
+            <span className="text-white/80 font-medium text-xs tracking-widest uppercase">Testimonials</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             What Our Clients Say
           </h2>
-          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
+          <div className="w-16 h-0.5 bg-white/80 mx-auto mb-4 rounded-full" />
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
             Trusted by diaspora Africans, investors, and organizations worldwide.
           </p>
@@ -116,17 +116,17 @@ export function TestimonialCarousel() {
             >
               <div className="flex items-center gap-1 mb-5">
                 {Array.from({ length: t.rating }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-brand-gold text-brand-gold" />
+                  <Star key={i} className="h-4 w-4 fill-white/80 text-white/80" />
                 ))}
               </div>
               <div className="relative mb-6">
-                <span className="absolute -top-3 -left-1 text-5xl text-brand-gold/20 font-serif leading-none">&ldquo;</span>
+                <span className="absolute -top-3 -left-1 text-5xl text-white/80/20 font-serif leading-none">&ldquo;</span>
                 <p className="text-white/80 leading-relaxed text-lg italic pl-6">
                   {t.quote}
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-brand-gold/20 border border-brand-gold/30 flex items-center justify-center text-brand-gold font-semibold">
+                <div className="w-12 h-12 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-white/80 font-semibold">
                   {t.initials}
                 </div>
                 <div>
@@ -152,7 +152,7 @@ export function TestimonialCarousel() {
                 key={i}
                 onClick={() => goTo(i)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  i === current ? "bg-brand-gold w-6" : "bg-white/20 hover:bg-white/40"
+                  i === current ? "bg-primary w-6" : "bg-white/20 hover:bg-white/40"
                 }`}
                 aria-label={`Go to testimonial ${i + 1}`}
               />

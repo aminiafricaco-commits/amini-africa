@@ -31,7 +31,7 @@ export function DesktopLayout({ children }: { children: React.ReactNode }) {
           <span className="w-px h-3 bg-white/20" />
           <span>Email: aminiafrica.co@gmail.com</span>
           <span className="w-px h-3 bg-white/20" />
-          <Link href="/book-consultation" className="text-brand-gold hover:underline font-medium">
+          <Link href="/book-consultation" className="text-white/80 hover:text-white hover:underline font-medium">
             Book a Consultation &rarr;
           </Link>
         </span>

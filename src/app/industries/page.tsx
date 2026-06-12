@@ -66,18 +66,18 @@ export default function IndustriesPage() {
   return (
     <div className="relative">
       <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-4 py-1.5 mb-5">
-              <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
-              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Industries</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
+              <Sparkles className="h-3.5 w-3.5 text-primary" />
+              <span className="text-primary font-medium text-xs tracking-widest uppercase">Industries</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Industries We Serve
             </h1>
-            <div className="w-16 h-0.5 bg-brand-gold mb-6 rounded-full" />
+            <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
               We support a diverse range of clients across multiple sectors, all
               united by one common need: trusted representation on the ground in
@@ -94,18 +94,18 @@ export default function IndustriesPage() {
               <Link
                 key={ind.title}
                 href={ind.href}
-                className="group bg-white rounded-2xl border border-border p-8 hover:border-brand-gold/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                className="group bg-white rounded-2xl border border-border p-8 hover:border-primary/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 mb-5 group-hover:from-brand-gold/20 group-hover:scale-105 transition-all duration-500">
-                  <ind.icon className="h-7 w-7 text-brand-gold" />
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 mb-5 group-hover:from-primary/20 group-hover:scale-105 transition-all duration-500">
+                  <ind.icon className="h-7 w-7 text-primary" />
                 </div>
-                <h2 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-brand-gold transition-colors duration-500">
+                <h2 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-500">
                   {ind.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {ind.description}
                 </p>
-                <span className="inline-flex items-center text-sm font-medium text-brand-gold group-hover:gap-2 transition-all duration-300">
+                <span className="inline-flex items-center text-sm font-medium text-primary group-hover:gap-2 transition-all duration-300">
                   View Services <ArrowRight className="ml-1 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
                 </span>
               </Link>
@@ -115,7 +115,7 @@ export default function IndustriesPage() {
       </section>
 
       <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.08),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Not Sure Where You Fit?
@@ -125,7 +125,7 @@ export default function IndustriesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
           >
             Contact Us <ArrowRight className="h-5 w-5" />
           </Link>

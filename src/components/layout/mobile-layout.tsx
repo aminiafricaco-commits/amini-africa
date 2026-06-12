@@ -46,7 +46,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
             </Link>
             <button
               onClick={() => setDrawerOpen(true)}
-              className="w-9 h-9 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold"
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary"
             >
               <Menu className="h-5 w-5" />
             </button>
@@ -103,7 +103,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden"
                       >
-                        <div className="pl-4 pb-2 space-y-1 border-l-2 border-brand-gold/30 ml-2">
+                        <div className="pl-4 pb-2 space-y-1 border-l-2 border-primary/30 ml-2">
                           {services.map((s) => (
                             <Link
                               key={s.href}
@@ -136,7 +136,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden"
                       >
-                        <div className="pl-4 pb-2 space-y-1 border-l-2 border-brand-gold/30 ml-2">
+                        <div className="pl-4 pb-2 space-y-1 border-l-2 border-primary/30 ml-2">
                           {company.map((c) => (
                             <Link
                               key={c.href}
@@ -178,7 +178,7 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
                 <div className="pt-4 space-y-3">
                   <Link
                     href="/book-consultation"
-                    className="block w-full text-center bg-brand-gold text-secondary py-3.5 rounded-lg font-semibold text-base active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-brand-gold/30"
+                    className="block w-full text-center bg-primary text-primary-foreground py-3.5 rounded-lg font-semibold text-base active:scale-[0.97] transition-all duration-150 hover:shadow-lg hover:shadow-primary/30"
                     onClick={() => setDrawerOpen(false)}
                   >
                     Book a Consultation
@@ -217,10 +217,10 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
             href="/book-consultation"
             className="relative -top-3 flex flex-col items-center"
           >
-            <div className="w-12 h-12 rounded-full bg-brand-gold flex items-center justify-center shadow-lg">
-              <Calendar className="h-6 w-6 text-secondary" />
+            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg">
+              <Calendar className="h-6 w-6 text-primary-foreground" />
             </div>
-            <span className="text-[10px] font-medium text-brand-gold mt-0.5">Book</span>
+            <span className="text-[10px] font-medium text-primary mt-0.5">Book</span>
           </Link>
           <Link href="/contact" className="flex flex-col items-center gap-0.5 text-secondary/60">
             <Phone className="h-5 w-5" />

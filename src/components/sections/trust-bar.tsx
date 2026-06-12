@@ -13,7 +13,7 @@ const logos = [
 
 export function TrustBar() {
   return (
-    <section className="py-12 md:py-16 bg-brand-cream/50 border-y border-brand-gold/10">
+    <section className="py-12 md:py-16 bg-muted border-y border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.p
           initial={{ opacity: 0 }}

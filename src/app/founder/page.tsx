@@ -12,18 +12,18 @@ export default function FounderPage() {
   return (
     <div className="relative">
       <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-4 py-1.5 mb-5">
-              <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
-              <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Founder</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
+              <Sparkles className="h-3.5 w-3.5 text-primary" />
+              <span className="text-primary font-medium text-xs tracking-widest uppercase">Founder</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Meet the Founder
             </h1>
-            <div className="w-16 h-0.5 bg-brand-gold mb-6 rounded-full" />
+            <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
               Amini Africa was born from a deeply personal understanding of the
               challenges diaspora Africans face when managing affairs from abroad.
@@ -54,15 +54,15 @@ export default function FounderPage() {
               </p>
             </div>
             <div className="lg:col-span-2">
-              <div className="bg-gradient-to-br from-brand-cream/80 to-brand-cream/30 rounded-2xl p-8 lg:p-10 border border-brand-gold/10">
-                <Quote className="h-10 w-10 text-brand-gold/50 mb-6" />
+              <div className="bg-gradient-to-br from-white/80 to-white/30 rounded-2xl p-8 lg:p-10 border border-primary/10">
+                <Quote className="h-10 w-10 text-primary/50 mb-6" />
                 <blockquote className="text-lg lg:text-xl text-secondary/90 leading-relaxed mb-6 italic">
                   &ldquo;We created Amini Africa because we believe no one should
                   have to choose between pursuing opportunities in Africa and
                   having peace of mind. Our clients deserve trusted representation
                   they can count on.&rdquo;
                 </blockquote>
-                <div className="border-t border-brand-gold/20 pt-4">
+                <div className="border-t border-primary/20 pt-4">
                   <p className="font-semibold text-secondary">Founder</p>
                   <p className="text-sm text-muted-foreground">Amini Africa</p>
                 </div>
@@ -73,7 +73,7 @@ export default function FounderPage() {
       </section>
 
       <section className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(10,22,40,0.08),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
             Let&apos;s Talk About Your Needs
@@ -84,7 +84,7 @@ export default function FounderPage() {
           </p>
           <Link
             href="/book-consultation"
-            className="inline-flex items-center gap-2 bg-brand-gold text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-brand-gold/90 hover:shadow-lg hover:shadow-brand-gold/25 active:scale-[0.97] transition-all duration-200"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97] transition-all duration-200"
           >
             Book a Consultation <ArrowRight className="h-5 w-5" />
           </Link>
