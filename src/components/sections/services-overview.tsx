@@ -55,8 +55,8 @@ export function ServicesOverview() {
   const rest = services.filter((s) => s.href !== featured.href);
 
   return (
-    <section className="py-28 md:py-36 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+    <section className="py-28 md:py-36 bg-brand-cream/60 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

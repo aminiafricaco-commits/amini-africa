@@ -20,9 +20,9 @@ export function MobileHero() {
         style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/85 via-secondary/70 to-secondary/85" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.15),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.15),transparent_60%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
       <div className="relative w-full px-4 py-16 mt-6">
         <motion.div

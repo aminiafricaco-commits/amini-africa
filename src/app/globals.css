@@ -11,19 +11,19 @@
     --foreground: 10 22 40;
     --card: 255 255 255;
     --card-foreground: 10 22 40;
-    --primary: 197 165 114;
+    --primary: 200 147 42;
     --primary-foreground: 10 22 40;
     --secondary: 10 22 40;
-    --secondary-foreground: 197 165 114;
-    --muted: 241 245 249;
+    --secondary-foreground: 200 147 42;
+    --muted: 247 243 238;
     --muted-foreground: 100 116 139;
-    --accent: 197 165 114;
+    --accent: 200 147 42;
     --accent-foreground: 10 22 40;
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 197 165 114;
+    --border: 220 215 205;
+    --input: 220 215 205;
+    --ring: 200 147 42;
   }
 }
 

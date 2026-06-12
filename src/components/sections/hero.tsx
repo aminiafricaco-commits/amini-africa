@@ -25,10 +25,10 @@ export function HeroSection() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 via-secondary/50 to-secondary/60" />
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 via-transparent to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(197,165,114,0.25),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,147,42,0.25),transparent_50%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background to-transparent" />
 
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.04)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(200,147,42,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(200,147,42,0.04)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
       <div className="absolute top-20 right-20 w-96 h-96 rounded-full border border-brand-gold/10 animate-float" />
       <div className="absolute bottom-40 right-1/3 w-48 h-48 rounded-full border border-brand-gold/10 animate-float" style={{ animationDelay: "-3s" }} />

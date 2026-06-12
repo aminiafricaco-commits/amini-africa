@@ -32,12 +32,14 @@ const config: Config = {
         input: "rgb(var(--input) / <alpha-value>)",
         ring: "rgb(var(--ring) / <alpha-value>)",
         brand: {
-          gold: "#C5A572",
+          gold: "#C8932A",
+          "gold-light": "#E8D5A3",
+          "gold-muted": "#F5EDE0",
           navy: "#0A1628",
+          "navy-light": "#1A2744",
           cream: "#FBF7F0",
+          warm: "#F7F3EE",
           charcoal: "#1A1A2E",
-          sage: "#7A9B76",
-          terracotta: "#C86A4E",
         },
       },
       fontFamily: {

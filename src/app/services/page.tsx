@@ -171,7 +171,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="mt-16 bg-secondary text-white rounded-2xl p-10 lg:p-14 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.1),transparent_60%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,147,42,0.1),transparent_60%)]" />
           <div className="relative">
             <h2 className="font-heading text-2xl lg:text-3xl font-bold mb-4">
               Not Sure Which Service You Need?

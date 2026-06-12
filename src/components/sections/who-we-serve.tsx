@@ -38,8 +38,8 @@ const segments = [
 export function WhoWeServe() {
   return (
     <section className="py-28 md:py-36 bg-secondary text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(197,165,114,0.08),transparent_40%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(197,165,114,0.05),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(200,147,42,0.08),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(200,147,42,0.05),transparent_40%)]" />
       <div className="absolute top-10 right-10 w-64 h-64 rounded-full border border-white/5 animate-float" />
       <div className="absolute bottom-10 left-10 w-40 h-40 rounded-full border border-white/5 animate-float" style={{ animationDelay: "-4s" }} />
 
