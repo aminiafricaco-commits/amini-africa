@@ -83,16 +83,16 @@ export function MobileHero() {
           {metrics.map((m) => (
             <div
               key={m.label}
-              className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2.5 border border-white/10"
+              className="flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-xl px-3 py-2.5 border border-white/20"
             >
-              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-brand-gold/10 shrink-0">
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-black/20 backdrop-blur-sm border border-white/20 shrink-0">
                 <m.icon className="h-4 w-4 text-brand-gold" />
               </div>
               <div>
                 <p className="text-white font-bold text-sm leading-none mb-0.5 font-heading">
                   <AnimatedCounter value={m.value} suffix={m.suffix} />
                 </p>
-                <p className="text-white/60 text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
+                <p className="text-white/70 text-[10px] leading-tight tracking-wide uppercase font-medium">{m.label}</p>
               </div>
             </div>
           ))}

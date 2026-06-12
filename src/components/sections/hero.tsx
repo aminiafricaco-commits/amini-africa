@@ -55,7 +55,7 @@ export function HeroSection() {
           >
             Trusted local representation, property verification, procurement, and
             business support for diaspora Africans, investors, and organizations
-            across <span className="text-foreground font-medium">Sub-Saharan Africa</span>.
+            across <span className="text-white font-medium">Sub-Saharan Africa</span>.
           </motion.p>
 
           <motion.div
@@ -86,17 +86,17 @@ export function HeroSection() {
             {metrics.map((m) => (
               <div
                 key={m.label}
-                className="group relative bg-white rounded-2xl px-5 py-4 border border-border hover:border-primary/30 hover:shadow-md transition-all duration-500"
+                className="group bg-white/15 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/20 hover:border-white/40 hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-brand-gold/10 shrink-0">
+                  <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-black/20 backdrop-blur-sm border border-white/20 shrink-0">
                     <m.icon className="h-5 w-5 text-brand-gold" />
                   </div>
                   <div>
-                    <p className="text-foreground font-bold text-2xl leading-none mb-0.5 font-heading">
+                    <p className="text-white font-bold text-2xl leading-none mb-0.5 font-heading">
                       <AnimatedCounter value={m.value} suffix={m.suffix} />
                     </p>
-                    <p className="text-muted-foreground text-xs leading-tight font-medium tracking-wide uppercase">{m.label}</p>
+                    <p className="text-white/70 text-xs leading-tight font-medium tracking-wide uppercase">{m.label}</p>
                   </div>
                 </div>
               </div>
