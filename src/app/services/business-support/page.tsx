@@ -37,23 +37,23 @@ const process = [
 export default function BusinessSupportPage() {
   return (
     <div className="relative">
-      <section className="relative pt-36 pb-20 overflow-hidden bg-secondary">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(107,114,128,0.15),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(107,114,128,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(107,114,128,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <section className="relative pt-36 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/business-handshake.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
-            <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 mb-6">
-              <Briefcase className="h-8 w-8 text-primary" />
+            <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 border border-white/20 mb-6">
+              <Briefcase className="h-8 w-8 text-white" />
             </div>
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-1.5 mb-5">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-5">
               <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
               <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Business</span>
             </div>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Business Support Services
             </h1>
-            <div className="w-16 h-0.5 bg-primary mb-6 rounded-full" />
-            <p className="text-lg text-foreground/85 leading-relaxed max-w-2xl mb-8">
+            <div className="w-16 h-0.5 bg-white/30 mb-6 rounded-full" />
+            <p className="text-lg text-white/85 leading-relaxed max-w-2xl mb-8">
               Expanding into Africa? We provide the local intelligence, compliance
               support, and operational assistance you need to succeed.
             </p>

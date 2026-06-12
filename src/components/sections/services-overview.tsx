@@ -19,6 +19,8 @@ const services = [
     description:
       "Personal errands, executive assistance, family support, and lifestyle management services across Africa.",
     href: "/services/concierge",
+    image: "/images/service-concierge.jpg",
+    location: "Nairobi, Kenya",
   },
   {
     icon: Building2,
@@ -26,6 +28,8 @@ const services = [
     description:
       "Title verification, site inspections, due diligence reports, and construction progress monitoring.",
     href: "/services/property-verification",
+    image: "/images/service-property.jpg",
+    location: "Nairobi, Kenya",
   },
   {
     icon: Truck,
@@ -33,6 +37,8 @@ const services = [
     description:
       "Product sourcing, vendor verification, quality assurance, and supplier negotiations with local partners.",
     href: "/services/procurement",
+    image: "/images/service-procurement.jpg",
+    location: "Kenya",
   },
   {
     icon: Plane,
@@ -40,6 +46,8 @@ const services = [
     description:
       "Relocation planning, airport transfers, accommodation research, and settling-in services.",
     href: "/services/relocation",
+    image: "/images/service-travel.jpg",
+    location: "Nairobi, Kenya",
   },
   {
     icon: Briefcase,
@@ -47,6 +55,8 @@ const services = [
     description:
       "Company registration, market research, compliance assistance, and operational support for African markets.",
     href: "/services/business-support",
+    image: "/images/business-handshake.jpg",
+    location: "Nairobi, Kenya",
   },
 ];
 
@@ -115,7 +125,7 @@ export function ServicesOverview() {
               </div>
             </Link>
             <div className="lg:col-span-2 relative rounded-2xl overflow-hidden min-h-[280px] lg:min-h-full">
-              <div className="absolute inset-0 bg-[url('/images/business-handshake.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/images/service-property.jpg')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="text-white/90 text-sm font-medium">Nairobi, Kenya</span>
@@ -136,20 +146,29 @@ export function ServicesOverview() {
             >
               <Link
                 href={service.href}
-                className="group block p-6 rounded-xl border border-border bg-white hover:border-primary/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-400 h-full relative overflow-hidden"
+                className="group block rounded-xl border border-border bg-white hover:border-primary/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-400 h-full relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative flex items-start gap-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-white to-white/80 border border-primary/20 shrink-0 group-hover:from-primary/20 group-hover:scale-110 transition-all duration-500">
-                    <service.icon className="h-6 w-6 text-primary" />
+                <div className="relative h-40 overflow-hidden">
+                  <div className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: `url(${service.image})` }} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <span className="text-white/80 text-xs font-medium">{service.location}</span>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-heading text-base font-bold text-foreground mb-1.5 group-hover:text-primary transition-colors duration-500">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {service.description}
-                    </p>
+                </div>
+                <div className="relative p-5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-white to-white/80 border border-primary/20 shrink-0 group-hover:from-primary/20 group-hover:scale-110 transition-all duration-500">
+                      <service.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-heading text-sm font-bold text-foreground mb-1 group-hover:text-primary transition-colors duration-500">
+                        {service.title}
+                      </h3>
+                      <p className="text-muted-foreground text-xs leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Link>
