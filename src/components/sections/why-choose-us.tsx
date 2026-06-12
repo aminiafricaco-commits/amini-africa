@@ -38,9 +38,9 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 md:py-28 bg-white/60 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(10,22,40,0.06),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(10,22,40,0.04),transparent_50%)]" />
+    <section className="relative py-20 md:py-28 overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/images/why-choose-bg.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
           {/* Left: heading + intro */}
@@ -51,16 +51,16 @@ export function WhyChooseUs() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-2"
           >
-            <div className="inline-flex items-center gap-2 bg-primary/15 rounded-full px-4 py-1.5 mb-5">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-5">
               <Star className="h-3.5 w-3.5 text-brand-gold" />
               <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
             </div>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 leading-tight">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
               Why Choose
               <br />
-              <span className="text-primary">Amini Africa?</span>
+              <span className="text-brand-gold">Amini Africa?</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-white/80 leading-relaxed mb-6">
               Operating across Africa from abroad comes with real risks — fraud,
               misinformation, logistical headaches. We eliminate those risks by
               being your trusted eyes and ears on the ground.
