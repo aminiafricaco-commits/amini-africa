@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, MessageSquare, ClipboardList, ClipboardCheck } from "lucide-react";
+import { Calendar, MessageSquare, ClipboardList, ClipboardCheck, Layers } from "lucide-react";
 
 const steps = [
   {
@@ -36,8 +36,9 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 md:py-32 bg-white relative">
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,9 +46,14 @@ export function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+            <Layers className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Process</span>
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
             How It Works
           </h2>
+          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Getting started is simple. Here is how we deliver results for our
             clients.

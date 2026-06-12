@@ -9,6 +9,7 @@ import {
   Heart,
   MapPin,
   UserCheck,
+  Star,
 } from "lucide-react";
 
 const reasons = [
@@ -58,8 +59,10 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-24 bg-brand-cream">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 md:py-32 bg-brand-cream relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(197,165,114,0.06),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(197,165,114,0.04),transparent_50%)]" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,9 +70,14 @@ export function WhyChooseUs() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/15 rounded-full px-4 py-1.5 mb-4">
+            <Star className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">Why Us</span>
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
             Why Choose Amini Africa?
           </h2>
+          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We provide the trust, transparency, and local expertise you need to
             operate confidently across Africa.

@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, CheckCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, Shield, Users, Building2, Award } from "lucide-react";
 
-const trustItems = [
-  "Verified Processes",
-  "Professional Reporting",
-  "Local Expertise",
-  "Transparent Communication",
-  "Reliable Execution",
-  "Accountability",
+const metrics = [
+  { icon: Users, value: "500+", label: "Clients" },
+  { icon: Building2, value: "15+", label: "Countries" },
+  { icon: Shield, value: "5+", label: "Years" },
+  { icon: Award, value: "98%", label: "Satisfied" },
 ];
 
 export function MobileHero() {
@@ -21,23 +19,25 @@ export function MobileHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
       />
-      {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary/95 via-secondary/90 to-secondary/95" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.12),transparent_60%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/85 via-secondary/70 to-secondary/85" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(197,165,114,0.15),transparent_60%)]" />
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
 
-      {/* Gold accent bar */}
-      <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-gold/40 via-brand-gold to-brand-gold/40" />
+      {/* Subtle grid */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(197,165,114,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(197,165,114,0.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
-      <div className="relative w-full px-4 py-20 mt-8">
-        <motion.p
+      <div className="relative w-full px-4 py-16 mt-6">
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="text-brand-gold font-semibold text-xs tracking-[0.2em] uppercase mb-4"
+          className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-brand-gold/20 rounded-full px-3 py-1 mb-5"
         >
-          Your Trusted Sub-Saharan Partner
-        </motion.p>
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-gold animate-pulse" />
+          <span className="text-brand-gold font-medium text-[10px] tracking-[0.15em] uppercase">
+            Trusted Across Africa
+          </span>
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 15 }}
@@ -45,9 +45,9 @@ export function MobileHero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-heading text-3xl sm:text-4xl font-bold text-white leading-tight mb-4"
         >
-          Your Trusted
+          Your Eyes & Ears
           <br />
-          <span className="text-brand-gold">Sub-Saharan</span> Partner
+          <span className="text-brand-gold">On the Ground</span> in Africa
         </motion.h1>
 
         <motion.p
@@ -56,9 +56,8 @@ export function MobileHero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-sm sm:text-base text-white/70 leading-relaxed mb-8"
         >
-          Supporting diaspora Africans, investors, businesses, and families
-          through trusted local representation, verification, procurement,
-          relocation, and business support services across Africa.
+          Trusted local representation, property verification, procurement, and
+          business support for diaspora Africans across Sub-Saharan Africa.
         </motion.p>
 
         <motion.div
@@ -87,15 +86,20 @@ export function MobileHero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-2 gap-2"
+          className="grid grid-cols-2 gap-2.5"
         >
-          {trustItems.map((item) => (
+          {metrics.map((m) => (
             <div
-              key={item}
-              className="flex items-center gap-2 text-white/50 text-xs bg-white/5 backdrop-blur-sm rounded-lg px-2.5 py-2 border border-white/5"
+              key={m.label}
+              className="flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-xl px-3 py-2.5 border border-white/5"
             >
-              <CheckCircle className="h-3.5 w-3.5 text-brand-gold shrink-0" />
-              <span>{item}</span>
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-brand-gold/10 border border-brand-gold/20 shrink-0">
+                <m.icon className="h-4 w-4 text-brand-gold" />
+              </div>
+              <div>
+                <p className="text-white font-bold text-sm leading-none mb-0.5">{m.value}</p>
+                <p className="text-white/50 text-[10px] leading-tight">{m.label}</p>
+              </div>
             </div>
           ))}
         </motion.div>

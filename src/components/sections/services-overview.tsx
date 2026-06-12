@@ -9,6 +9,7 @@ import {
   Plane,
   Briefcase,
   ArrowRight,
+  Sparkles,
 } from "lucide-react";
 
 const services = [
@@ -51,7 +52,7 @@ const services = [
 
 export function ServicesOverview() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,9 +61,14 @@ export function ServicesOverview() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/10 rounded-full px-4 py-1.5 mb-4">
+            <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
+            <span className="text-brand-gold font-medium text-xs tracking-widest uppercase">What We Offer</span>
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
             Our Services
           </h2>
+          <div className="w-16 h-0.5 bg-brand-gold mx-auto mb-4 rounded-full" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive support services across Sub-Saharan Africa, delivered
             with professionalism, transparency, and accountability.
@@ -80,21 +86,22 @@ export function ServicesOverview() {
             >
               <Link
                 href={service.href}
-                className="group block p-8 rounded-xl border border-border bg-white hover:border-brand-gold/50 hover:shadow-xl transition-all duration-300 h-full relative overflow-hidden"
+                className="group block p-8 rounded-xl border border-border bg-white hover:border-brand-gold/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 h-full relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-brand-gold/5 blur-2xl group-hover:bg-brand-gold/10 transition-all duration-500" />
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 mb-5 group-hover:from-brand-gold/20 group-hover:to-brand-cream transition-all duration-300">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-brand-cream to-brand-cream/80 border border-brand-gold/20 mb-5 group-hover:from-brand-gold/20 group-hover:to-brand-cream group-hover:scale-110 transition-all duration-500">
                     <service.icon className="h-7 w-7 text-brand-gold" />
                   </div>
-                  <h3 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-brand-gold transition-colors">
+                  <h3 className="font-heading text-xl font-bold text-secondary mb-3 group-hover:text-brand-gold transition-colors duration-500">
                     {service.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {service.description}
                   </p>
                   <span className="inline-flex items-center text-sm font-medium text-brand-gold group-hover:gap-3 transition-all duration-300">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    Learn More <ArrowRight className="ml-1 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
                   </span>
                 </div>
               </Link>

@@ -43,7 +43,7 @@ const config: Config = {
       fontFamily: {
         display: ['"Playfair Display"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
         sans: [
-          '"Outfit"',
+          '"Inter"',
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
