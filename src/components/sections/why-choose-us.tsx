@@ -3,39 +3,33 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Clock,
-  Shield,
-  SearchX,
-  DollarSign,
-  Heart,
-  MapPin,
-  UserCheck,
-  Star,
   ArrowRight,
+  Star,
 } from "lucide-react";
+import { getAnimatedIcon } from "@/components/ui/animated-icons";
 import { Button } from "@/components/ui/button";
 
 const reasons = [
   {
-    icon: UserCheck,
+    icon: "agent",
     title: "Dedicated Local Representative",
     description:
       "Every client gets a personal representative who knows the local landscape and advocates for your interests.",
   },
   {
-    icon: Shield,
+    icon: "shield",
     title: "Thorough Due Diligence",
     description:
       "Rigorous verification and fraud prevention to protect your investments and give you complete confidence.",
   },
   {
-    icon: MapPin,
+    icon: "compass",
     title: "Deep Local Expertise",
     description:
       "Insider knowledge of markets, regulations, and business practices across Sub-Saharan Africa.",
   },
   {
-    icon: Clock,
+    icon: "clock",
     title: "Save Time & Money",
     description:
       "Eliminate unnecessary travel. We handle everything on the ground so you don't have to.",
@@ -80,26 +74,29 @@ export function WhyChooseUs() {
 
           {/* Right: benefit cards in 2x2 grid */}
           <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {reasons.map((reason, index) => (
-              <motion.div
-                key={reason.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="bg-white rounded-2xl p-6 border border-primary/10 hover:border-primary/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
-              >
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-white border border-primary/20 mb-4 group-hover:from-primary/25 group-hover:scale-105 transition-all duration-300">
-                  <reason.icon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-heading font-bold text-lg text-foreground mb-2">
-                  {reason.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {reason.description}
-                </p>
-              </motion.div>
-            ))}
+            {reasons.map((reason, index) => {
+              const IconComponent = getAnimatedIcon(reason.icon);
+              return (
+                <motion.div
+                  key={reason.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.08 }}
+                  className="bg-white rounded-2xl p-6 border border-primary/10 hover:border-primary/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
+                >
+                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary/15 to-white border border-primary/20 mb-4 group-hover:from-primary/25 group-hover:scale-105 transition-all duration-300">
+                    <IconComponent className="text-primary" />
+                  </div>
+                  <h3 className="font-heading font-bold text-lg text-foreground mb-2">
+                    {reason.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {reason.description}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
