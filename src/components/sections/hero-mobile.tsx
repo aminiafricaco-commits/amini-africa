@@ -15,7 +15,7 @@ const metrics = [
 
 export function MobileHero() {
   return (
-    <section className="relative min-h-[90svh] flex items-center overflow-hidden">
+    <section className="relative min-h-[80svh] flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-[url('/images/hero-2.jpg')] bg-cover bg-center bg-no-repeat" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
       <div className="relative w-full px-4 py-16 mt-6">
